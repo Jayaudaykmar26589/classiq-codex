@@ -1,0 +1,190 @@
+{
+  "allocation": [
+    {
+      "x_lanes": 1,
+      "y_lanes": 3,
+      "proxy_max_side_depth_sum": 365,
+      "proxy_total_cx": 1232,
+      "x": {
+        "depth_sum": 322,
+        "cx_sum": 576,
+        "cycles": [
+          [
+            7,
+            3,
+            2,
+            1,
+            9,
+            6,
+            5,
+            8,
+            4,
+            0
+          ]
+        ]
+      },
+      "y": {
+        "depth_sum": 365,
+        "cx_sum": 656,
+        "cycles": [
+          [
+            9,
+            1,
+            8,
+            5,
+            2,
+            7,
+            3,
+            0
+          ],
+          [
+            4
+          ],
+          [
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "x_lanes": 2,
+      "y_lanes": 2,
+      "proxy_max_side_depth_sum": 341,
+      "proxy_total_cx": 1222,
+      "x": {
+        "depth_sum": 334,
+        "cx_sum": 600,
+        "cycles": [
+          [
+            5,
+            8,
+            4,
+            6,
+            9,
+            1,
+            3,
+            2,
+            0
+          ],
+          [
+            7
+          ]
+        ]
+      },
+      "y": {
+        "depth_sum": 341,
+        "cx_sum": 622,
+        "cycles": [
+          [
+            6,
+            8,
+            1,
+            9,
+            2,
+            7,
+            3,
+            5,
+            0
+          ],
+          [
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "x_lanes": 3,
+      "y_lanes": 1,
+      "proxy_max_side_depth_sum": 354,
+      "proxy_total_cx": 1224,
+      "x": {
+        "depth_sum": 354,
+        "cx_sum": 632,
+        "cycles": [
+          [
+            0
+          ],
+          [
+            6,
+            9,
+            1,
+            3,
+            2,
+            4,
+            8,
+            5
+          ],
+          [
+            7
+          ]
+        ]
+      },
+      "y": {
+        "depth_sum": 322,
+        "cx_sum": 592,
+        "cycles": [
+          [
+            4,
+            6,
+            8,
+            1,
+            9,
+            2,
+            7,
+            3,
+            5,
+            0
+          ]
+        ]
+      }
+    }
+  ],
+  "best_by_proxy": {
+    "x_lanes": 2,
+    "y_lanes": 2,
+    "proxy_max_side_depth_sum": 341,
+    "proxy_total_cx": 1222,
+    "x": {
+      "depth_sum": 334,
+      "cx_sum": 600,
+      "cycles": [
+        [
+          5,
+          8,
+          4,
+          6,
+          9,
+          1,
+          3,
+          2,
+          0
+        ],
+        [
+          7
+        ]
+      ]
+    },
+    "y": {
+      "depth_sum": 341,
+      "cx_sum": 622,
+      "cycles": [
+        [
+          6,
+          8,
+          1,
+          9,
+          2,
+          7,
+          3,
+          5,
+          0
+        ],
+        [
+          4
+        ]
+      ]
+    }
+  },
+  "scope": "Independent-side cycle-cover screen using raw local block scores. It omits shared feature/CZ synchronization, aggregate orientation closure, affine overhead, cross-block fusion, and full verification; values are not circuit scores.",
+  "conclusion": "The relaxed proxy favors the incumbent two-flags-per-side allocation over asymmetric flag reuse."
+}

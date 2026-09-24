@@ -1,0 +1,14 @@
+{
+  "source_qasm": "/Users/jayachandiranudayakumar/Desktop/Classiq-Codex/outputs/best_verified_depth177_cx429.qasm",
+  "source_sha256": "246ce7173f0fc880f874d22c67b2a26ece83355345aa55b9717d13e37e4083f5",
+  "exact_main_only_qmod": "/Users/jayachandiranudayakumar/Desktop/Classiq-Codex/outputs/classiq_logo_depth177_main_only.qmod",
+  "exact_qmod_sha256": "07fe43060e19fc2d90997d4297552c6f99cea6ea4886f31444dbaa8ed75f1b07",
+  "probe_qmod": "/Users/jayachandiranudayakumar/Desktop/Classiq-Codex/outputs/classiq_logo_depth177_superposition_probe.qmod",
+  "probe_qmod_sha256": "949c62cabe38a2c115e029a0f86631b2dc8252544af12fd36d7ba6e9b547162a",
+  "oracle_gate_count": 820,
+  "oracle_cx_count": 429,
+  "oracle_u3_count": 391,
+  "probe_preparation_h_count": 12,
+  "classiq_parser_tested": false,
+  "classiq_synthesis_tested": false
+}

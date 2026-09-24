@@ -1,0 +1,69 @@
+{
+  "implemented": "joint nonlinear intermediate-state and phase-program regional resynthesis",
+  "target_depth": 150,
+  "protected_reference": {
+    "depth": 177,
+    "cx": 429,
+    "u3": 391,
+    "width": 18,
+    "sha256": "246ce7173f0fc880f874d22c67b2a26ece83355345aa55b9717d13e37e4083f5"
+  },
+  "best_experimental": {
+    "depth": 199,
+    "cx": 446,
+    "u3": 415,
+    "width": 18,
+    "gates": 861,
+    "sha256": "36d083fe35bf4330b80bb4b192984eef36eff2a9866e6147b8f23592fefb2a4e",
+    "metric_scope": "local emitted U3/CX unit-time wire-order ASAP",
+    "official_grading": false
+  },
+  "improves_protected_reference": false,
+  "target_achieved": false,
+  "regional_scope": "replace original-source operations [0,91); nonlinear side trajectories and first target phase stage jointly rebuilt; original suffix retained before semantics-preserving cleanup/scheduling",
+  "search_counts": {
+    "joint_search_history.jsonl": {
+      "nonlinear_trajectory_search": 8,
+      "phase_rebuild": 576,
+      "whole_circuit_evaluation": 192
+    },
+    "joint_search_v2_history.jsonl": {
+      "nonlinear_trajectory_search": 6,
+      "phase_rebuild": 612,
+      "whole_circuit_evaluation": 204
+    },
+    "joint_search_v3_history.jsonl": {
+      "nonlinear_trajectory_search": 4,
+      "phase_rebuild": 576,
+      "whole_circuit_evaluation": 192
+    },
+    "coupled_region": {
+      "phase_lift_attempts": 60,
+      "completed_native_candidates": 29,
+      "unresolved_lifts": 31
+    }
+  },
+  "main_state_phase_beam_calls": 18,
+  "side_phase_cover_attempts": 1764,
+  "state_search_complete_oracle_evaluations": 588,
+  "coupled_region_native_evaluations": 29,
+  "preliminary_phase_cover_attempts": 90,
+  "initial_planner_runs": 8,
+  "final_scheduling_trials": 32,
+  "earlier_scheduling_trials": 88,
+  "counts_include_repeated_candidates": true,
+  "new_all4096_native_verification": true,
+  "six_unpruned_regressions": true,
+  "official_grading": false,
+  "classiq_sdk_run": false,
+  "qiskit_run": false,
+  "no_new_incumbent": true,
+  "incomplete_twoproduct_issue": "v2 used a noncanonical quotient reducer. Returned witnesses were exact, but some valid two-product matches could be missed. v3 uses complete quotient reduction. Neither search failure is an infeasibility certificate.",
+  "release_tests_passed": 14,
+  "reproduced_from_semantic_record": true,
+  "bitwise_recompilations": 3,
+  "cli_smoke_passed": true,
+  "cli_smoke_excluded_from_main_counts": true,
+  "separately_extracted_tests_passed": 14,
+  "separately_extracted_reproduction_passed": true
+}

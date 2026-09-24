@@ -1,0 +1,6 @@
+{
+  "qasm_operations": 820,
+  "qmod_body_operations": 820,
+  "identical_numeric_gate_sequence": true,
+  "first_mismatches": []
+}

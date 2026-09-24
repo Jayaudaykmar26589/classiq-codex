@@ -1,0 +1,99 @@
+{
+  "target": {
+    "depth_min": 117,
+    "depth_max": 128,
+    "width_cap": 18,
+    "primary_metric": "native_u3_cx_depth",
+    "tie_breaker": "cx_count",
+    "snapshot_top_five_rule": "depth <= 127, or depth = 128 and CX < 405",
+    "snapshot_top_three_rule": "depth <= 124, or depth = 125 and CX < 563",
+    "leaderboard_snapshot": "../research/leaderboard_snapshot_2026-09-22.json"
+  },
+  "target_achieved": false,
+  "best_scored_pair": {
+    "qasm": "best_verified_depth177_cx426.qasm",
+    "qmod": "best_verified_depth177_cx426.qmod",
+    "depth": 177,
+    "cx_count": 426,
+    "u3_count": 390,
+    "width": 18,
+    "source": "Full phase-aware nine-wire x/y isometry refits after deleting originalCX632 andCX671",
+    "verification": "best_verified_depth177_cx426_verification.json",
+    "qmod_correspondence": "best_verified_depth177_cx426_qmod_correspondence.json"
+  },
+  "same_score_rewrite": {
+    "qasm": "experimental_cx_gauge_depth177_cx429_u388.qasm",
+    "qmod": "experimental_cx_gauge_depth177_cx429_u388.qmod",
+    "depth": 177,
+    "cx_count": 429,
+    "u3_count": 388,
+    "width": 18,
+    "source": "exact CX-direction gauges and U3 fusion"
+  },
+  "attached_joint_encoding": {
+    "depth": 199,
+    "cx_count": 446,
+    "u3_count": 415,
+    "width": 18,
+    "verified": true
+  },
+  "verification": "Current177/426 pair passes all4096 clean-input coordinate columns,1097 marked phases, restored coordinates and clean helpers; QMOD numeric gate body matches QASM.",
+  "official_score_or_rank_verified": false,
+  "research_report": "../research/joint_state_phase_next/REPORT.md",
+  "previous_best_scored_pair": {
+    "qasm": "best_verified_depth177_cx428.qasm",
+    "qmod": "best_verified_depth177_cx428.qmod",
+    "depth": 177,
+    "cx_count": 428,
+    "u3_count": 392,
+    "width": 18,
+    "source": "verified clean-input phase relocation of protected reference"
+  },
+  "strict_thresholds": {
+    "depth_less_than": 177,
+    "cx_less_than": 428,
+    "width_exactly": 18,
+    "achieved": false
+  },
+  "current_requested_benchmark": {
+    "depth": 128,
+    "cx_count": 405,
+    "width": 18,
+    "source": "Independently refreshed public Classiq leaderboard at 2026-09-22T08:57:48Z",
+    "strict_target": {
+      "depth_less_than": 128,
+      "cx_less_than_at_equal_depth": 405,
+      "width_exactly": 18
+    },
+    "lexicographic_win": "depth < 128, or depth == 128 and CX < 405",
+    "achieved": false,
+    "stopping_condition": "Two restructuring rounds per track, then report",
+    "report": "../research/leaderboard_snapshot_2026-09-22.json"
+  },
+  "latest_architecture_search": "../research/partial_bank_next/SUMMARY.json",
+  "classiq_sdk_authentication_status": "unconfirmed: macOS Keychain refresh-token retrieval stalled",
+  "latest_verified_new_architecture": {
+    "depth": 705,
+    "cx_count": 1181,
+    "width": 18,
+    "qasm": "../research/partial_phase_next/joint_assignment/round1_complete.qasm",
+    "qmod": "../research/partial_phase_next/joint_assignment/round1_complete.qmod",
+    "improves_best": false
+  },
+  "classiq_browser_authentication_status": "unconfirmed: supported browser navigation denied because admin-enforced policy could not be verified",
+  "classiq_browser_status_evidence": "../research/partial_phase_next/classiq_browser_status.json",
+  "latest_search_outcome": {
+    "new_valid_improvement": false,
+    "retained": [
+      177,
+      426,
+      18
+    ],
+    "two_rounds_per_track_complete": true,
+    "new_component_only_depth_cx": [
+      9,
+      12
+    ]
+  },
+  "latest_source_review": "../research/triangle_integration_next/source_register/RESEARCH_DIRECTION.md"
+}

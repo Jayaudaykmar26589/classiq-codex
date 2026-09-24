@@ -1,0 +1,10 @@
+{
+  "qasm": "/Users/jayachandiranudayakumar/Desktop/Classiq-Codex/outputs/best_verified_depth177_cx426.qasm",
+  "qmod": "/Users/jayachandiranudayakumar/Desktop/Classiq-Codex/outputs/best_verified_depth177_cx426.qmod",
+  "identical_numeric_gate_sequence": true,
+  "gates": 816,
+  "cx": 426,
+  "u3": 390,
+  "width": 18,
+  "depth": 177
+}

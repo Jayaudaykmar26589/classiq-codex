@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "engine": "numpy_port",
+  "gates": 821,
+  "cx": 421,
+  "basis_inputs_checked": 4096,
+  "marked_pixels": 1097,
+  "common_global_phase": [
+    0.99838933320192,
+    -0.05673393471834833
+  ],
+  "max_observed_error": 5.487683537954026e-12,
+  "max_discarded_l2_bound": 2.704478012161192e-12,
+  "max_error_plus_bound": 8.192161550115219e-12,
+  "max_helper_leakage_probability": 3.013830087016044e-23,
+  "max_norm_error": 2.7977620220553945e-14,
+  "max_final_support": 9,
+  "normalized_u3_angles": 6
+}

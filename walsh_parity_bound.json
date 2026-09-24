@@ -1,0 +1,368 @@
+{
+  "feature_weights": {
+    "x": [
+      2,
+      24,
+      25,
+      17,
+      4,
+      2,
+      8,
+      60,
+      4,
+      6,
+      0
+    ],
+    "y": [
+      2,
+      8,
+      12,
+      17,
+      2,
+      4,
+      2,
+      13,
+      8,
+      2,
+      0
+    ]
+  },
+  "odd_weight_features": {
+    "x": [
+      2,
+      3
+    ],
+    "y": [
+      3,
+      7
+    ]
+  },
+  "edges": [
+    {
+      "index": 0,
+      "lane": 1,
+      "side": "y",
+      "from": 10,
+      "to": 7,
+      "delta_weight": 13,
+      "delta_weight_parity": 1,
+      "nonzero_walsh_coefficients": 64,
+      "all_coefficients_odd": true
+    },
+    {
+      "index": 1,
+      "lane": 1,
+      "side": "x",
+      "from": 10,
+      "to": 7,
+      "delta_weight": 60,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 16,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 2,
+      "lane": 0,
+      "side": "x",
+      "from": 10,
+      "to": 0,
+      "delta_weight": 2,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 32,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 3,
+      "lane": 0,
+      "side": "y",
+      "from": 10,
+      "to": 0,
+      "delta_weight": 2,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 32,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 4,
+      "lane": 1,
+      "side": "x",
+      "from": 7,
+      "to": 3,
+      "delta_weight": 43,
+      "delta_weight_parity": 1,
+      "nonzero_walsh_coefficients": 64,
+      "all_coefficients_odd": true
+    },
+    {
+      "index": 5,
+      "lane": 1,
+      "side": "y",
+      "from": 7,
+      "to": 3,
+      "delta_weight": 30,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 40,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 6,
+      "lane": 0,
+      "side": "x",
+      "from": 0,
+      "to": 5,
+      "delta_weight": 4,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 40,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 7,
+      "lane": 0,
+      "side": "y",
+      "from": 0,
+      "to": 5,
+      "delta_weight": 6,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 44,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 8,
+      "lane": 1,
+      "side": "x",
+      "from": 3,
+      "to": 2,
+      "delta_weight": 42,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 42,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 9,
+      "lane": 1,
+      "side": "y",
+      "from": 3,
+      "to": 2,
+      "delta_weight": 29,
+      "delta_weight_parity": 1,
+      "nonzero_walsh_coefficients": 64,
+      "all_coefficients_odd": true
+    },
+    {
+      "index": 10,
+      "lane": 0,
+      "side": "x",
+      "from": 5,
+      "to": 8,
+      "delta_weight": 2,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 32,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 11,
+      "lane": 0,
+      "side": "y",
+      "from": 5,
+      "to": 8,
+      "delta_weight": 12,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 42,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 12,
+      "lane": 1,
+      "side": "x",
+      "from": 2,
+      "to": 1,
+      "delta_weight": 49,
+      "delta_weight_parity": 1,
+      "nonzero_walsh_coefficients": 64,
+      "all_coefficients_odd": true
+    },
+    {
+      "index": 13,
+      "lane": 1,
+      "side": "y",
+      "from": 2,
+      "to": 1,
+      "delta_weight": 20,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 42,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 14,
+      "lane": 0,
+      "side": "x",
+      "from": 8,
+      "to": 4,
+      "delta_weight": 8,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 36,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 15,
+      "lane": 0,
+      "side": "y",
+      "from": 8,
+      "to": 4,
+      "delta_weight": 6,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 40,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 16,
+      "lane": 1,
+      "side": "x",
+      "from": 1,
+      "to": 9,
+      "delta_weight": 30,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 40,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 17,
+      "lane": 1,
+      "side": "y",
+      "from": 1,
+      "to": 9,
+      "delta_weight": 6,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 32,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 18,
+      "lane": 0,
+      "side": "x",
+      "from": 4,
+      "to": 6,
+      "delta_weight": 4,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 40,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 19,
+      "lane": 0,
+      "side": "y",
+      "from": 4,
+      "to": 6,
+      "delta_weight": 4,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 40,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 20,
+      "lane": 1,
+      "side": "x",
+      "from": 9,
+      "to": 10,
+      "delta_weight": 6,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 32,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 21,
+      "lane": 1,
+      "side": "y",
+      "from": 9,
+      "to": 10,
+      "delta_weight": 2,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 32,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 22,
+      "lane": 0,
+      "side": "x",
+      "from": 6,
+      "to": 10,
+      "delta_weight": 8,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 36,
+      "all_coefficients_odd": false
+    },
+    {
+      "index": 23,
+      "lane": 0,
+      "side": "y",
+      "from": 6,
+      "to": 10,
+      "delta_weight": 2,
+      "delta_weight_parity": 0,
+      "nonzero_walsh_coefficients": 32,
+      "all_coefficients_odd": false
+    }
+  ],
+  "observed_dense_edges": [
+    {
+      "index": 0,
+      "lane": 1,
+      "side": "y",
+      "from": 10,
+      "to": 7,
+      "delta_weight": 13,
+      "delta_weight_parity": 1,
+      "nonzero_walsh_coefficients": 64,
+      "all_coefficients_odd": true
+    },
+    {
+      "index": 4,
+      "lane": 1,
+      "side": "x",
+      "from": 7,
+      "to": 3,
+      "delta_weight": 43,
+      "delta_weight_parity": 1,
+      "nonzero_walsh_coefficients": 64,
+      "all_coefficients_odd": true
+    },
+    {
+      "index": 9,
+      "lane": 1,
+      "side": "y",
+      "from": 3,
+      "to": 2,
+      "delta_weight": 29,
+      "delta_weight_parity": 1,
+      "nonzero_walsh_coefficients": 64,
+      "all_coefficients_odd": true
+    },
+    {
+      "index": 12,
+      "lane": 1,
+      "side": "x",
+      "from": 2,
+      "to": 1,
+      "delta_weight": 49,
+      "delta_weight_parity": 1,
+      "nonzero_walsh_coefficients": 64,
+      "all_coefficients_odd": true
+    }
+  ],
+  "observed_dense_edges_by_side": {
+    "x": 2,
+    "y": 2
+  },
+  "observed_dense_walsh_terms": 256,
+  "family_lower_bound": {
+    "dense_edges_per_side": 2,
+    "dense_edges_total": 4,
+    "walsh_phase_terms_from_dense_edges": 256,
+    "dense_block_depth_in_fixed_four_track_compiler": 38,
+    "two_serial_dense_blocks_per_side_depth": 76,
+    "proof": "For a 0/1 vector d, every unnormalized Walsh coefficient is congruent to sum(d) modulo 2. An odd-weight delta therefore has all 64 coefficients odd and nonzero. A closed stream starts and ends at the even zero feature; if it visits any odd-weight feature it crosses the parity cut at least twice. Both coordinate factor spaces contain an odd-weight vector. Invertible feature-basis changes preserve that nonzero parity functional, coordinate permutations preserve weight, and even integer-potential lifts preserve the congruence.",
+    "scope": "Lower bound for closed, exact per-edge Walsh controlled-RX streams. It is not a lower bound for arbitrary phase-oracle architectures or reachable-subspace superblocks."
+  },
+  "fixed_four_track_depth_reason": "A dense edge assigns 16 phase rotations to each of four tracks. Visiting all 16 four-bit masks and returning to zero needs at least 16 target CNOT transitions. The flag track also has two Hadamards and four preparation/restoration CNOT touches, giving a 38-operation serial flag chain.",
+  "saturated_by_saved_tour": true
+}

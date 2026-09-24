@@ -1,0 +1,4347 @@
+[
+  {
+    "sha256": "886732db6a417f4af6b92edc84d73b5fdb64ae62cbc71a8aa31ba625c79569ff",
+    "metrics": {
+      "width": 18,
+      "depth": 227,
+      "cx": 200,
+      "u3": 130,
+      "gates": 330
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/caterpillar/custom_factor0_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "9c3639733bd5e90ee8f007209018822616d4aafe8db9d4579685954f3adeba54",
+    "metrics": {
+      "width": 18,
+      "depth": 337,
+      "cx": 1267,
+      "u3": 1010,
+      "gates": 2277
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_affine_multitrack_candidate/logo_oracle.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_affine_refine/best.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_affine_multitrack_candidate/exhaustive_verification.json",
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_affine_multitrack_candidate/logo_oracle.validation.json",
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_affine_multitrack_candidate/manifest.json",
+      "research/external_classiq_oracle_1609/source_snapshot/output/pdf/handoff_evidence.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_affine_refine/best.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_affine_refine/best.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_affine_multitrack_candidate/exhaustive_verification.json",
+        "fields": {
+          "source.columns": 4096,
+          "source.gate_counts.cx": 1267,
+          "source.gate_counts.u3": 1010,
+          "source.width": 18,
+          "source.depth": 337,
+          "source.target_logical_data_mismatches": 0,
+          "source.max_column_l2_residual": 1.694695570557978e-14,
+          "source.operator_error_upper_bound_from_frobenius_and_truncation": 9.264664170244606e-13,
+          "source.passed": true,
+          "source.scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "source.qasm_sha256": "9c3639733bd5e90ee8f007209018822616d4aafe8db9d4579685954f3adeba54",
+          "exported_qasm.columns": 4096,
+          "exported_qasm.gate_counts.cx": 1267,
+          "exported_qasm.gate_counts.u3": 1010,
+          "exported_qasm.width": 18,
+          "exported_qasm.depth": 337,
+          "exported_qasm.target_logical_data_mismatches": 0,
+          "exported_qasm.max_column_l2_residual": 1.694695570557978e-14,
+          "exported_qasm.operator_error_upper_bound_from_frobenius_and_truncation": 9.264664170244606e-13,
+          "exported_qasm.passed": true,
+          "exported_qasm.scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "exported_qasm.qasm_sha256": "9c3639733bd5e90ee8f007209018822616d4aafe8db9d4579685954f3adeba54",
+          "scope": "All 4096 clean-input columns, numerically checked with one shared global phase; not symbolic or interval arithmetic."
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_affine_multitrack_candidate/logo_oracle.validation.json",
+        "fields": {
+          "qasm_sha256": "9c3639733bd5e90ee8f007209018822616d4aafe8db9d4579685954f3adeba54",
+          "depth": 337,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_affine_multitrack_candidate/manifest.json",
+        "fields": {
+          "width": 18,
+          "depth": 337,
+          "qasm_sha256": "9c3639733bd5e90ee8f007209018822616d4aafe8db9d4579685954f3adeba54",
+          "scope": "Oracle body only; QMOD main has 12 input-preparation H gates.",
+          "numerical_validation_passed": true,
+          "verification_scope": "All 4096 clean-input columns of source and exported QASM, numerically checked with one common global phase and bounded discarded monomial-classification entries; plus three random full-support states. Not a symbolic exact-arithmetic proof.",
+          "exhaustive_clean_input_columns": 4096,
+          "exhaustive_numerical_validation_passed": true,
+          "exhaustive_max_column_l2_residual": 1.694695570557978e-14,
+          "exhaustive_operator_error_estimate": 9.264664170244606e-13
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/output/pdf/handoff_evidence.json",
+        "fields": {
+          "imports.depth_scheduler": [
+            "tracks/verification/selftest.py"
+          ],
+          "current.depth": 337,
+          "current.width": 18,
+          "current.logical_certificate.inputs": 4096,
+          "current.logical_certificate.mismatches": 0,
+          "current.logical_certificate.scope": "Exact ideal-block composition; numerical local controlled-RX identities independently checked",
+          "current.saved_qasm_random_validation.qasm_sha256": "9c3639733bd5e90ee8f007209018822616d4aafe8db9d4579685954f3adeba54",
+          "current.saved_qasm_random_validation.depth": 337,
+          "current.saved_qasm_random_validation.width": 18,
+          "current.saved_qasm_random_validation.passed": true,
+          "current.saved_qasm_random_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof",
+          "current.saved_qasm_exhaustive_validation.columns": 4096,
+          "current.saved_qasm_exhaustive_validation.gate_counts.cx": 1267,
+          "current.saved_qasm_exhaustive_validation.gate_counts.u3": 1010,
+          "current.saved_qasm_exhaustive_validation.width": 18,
+          "current.saved_qasm_exhaustive_validation.depth": 337,
+          "current.saved_qasm_exhaustive_validation.target_logical_data_mismatches": 0,
+          "current.saved_qasm_exhaustive_validation.max_column_l2_residual": 1.694695570557978e-14,
+          "current.saved_qasm_exhaustive_validation.operator_error_upper_bound_from_frobenius_and_truncation": 9.264664170244606e-13,
+          "current.saved_qasm_exhaustive_validation.passed": true,
+          "current.saved_qasm_exhaustive_validation.scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "current.saved_qasm_exhaustive_validation.qasm_sha256": "9c3639733bd5e90ee8f007209018822616d4aafe8db9d4579685954f3adeba54",
+          "current.search_scope.elementary_shears_per_side": 30,
+          "current.search_scope.screened_bases": 62,
+          "current.search_scope.strict_bases": 11,
+          "current.search_scope.full_oracles": 80,
+          "current.search_scope.seconds": 104.74730009999621
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_affine_refine/best.report.json",
+        "fields": {
+          "depth": 337,
+          "width": 18,
+          "logical_certificate.inputs": 4096,
+          "logical_certificate.mismatches": 0,
+          "logical_certificate.scope": "Exact ideal-block composition; numerical local controlled-RX identities independently checked",
+          "saved_qasm_random_validation.qasm_sha256": "9c3639733bd5e90ee8f007209018822616d4aafe8db9d4579685954f3adeba54",
+          "saved_qasm_random_validation.depth": 337,
+          "saved_qasm_random_validation.width": 18,
+          "saved_qasm_random_validation.passed": true,
+          "saved_qasm_random_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof",
+          "saved_qasm_exhaustive_validation.columns": 4096,
+          "saved_qasm_exhaustive_validation.gate_counts.cx": 1267,
+          "saved_qasm_exhaustive_validation.gate_counts.u3": 1010,
+          "saved_qasm_exhaustive_validation.width": 18,
+          "saved_qasm_exhaustive_validation.depth": 337,
+          "saved_qasm_exhaustive_validation.target_logical_data_mismatches": 0,
+          "saved_qasm_exhaustive_validation.max_column_l2_residual": 1.694695570557978e-14,
+          "saved_qasm_exhaustive_validation.operator_error_upper_bound_from_frobenius_and_truncation": 9.264664170244606e-13,
+          "saved_qasm_exhaustive_validation.passed": true,
+          "saved_qasm_exhaustive_validation.scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "saved_qasm_exhaustive_validation.qasm_sha256": "9c3639733bd5e90ee8f007209018822616d4aafe8db9d4579685954f3adeba54",
+          "search_scope.elementary_shears_per_side": 30,
+          "search_scope.screened_bases": 62,
+          "search_scope.strict_bases": 11,
+          "search_scope.full_oracles": 80,
+          "search_scope.seconds": 104.74730009999621
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_affine_refine/best.validation.json",
+        "fields": {
+          "qasm_sha256": "9c3639733bd5e90ee8f007209018822616d4aafe8db9d4579685954f3adeba54",
+          "depth": 337,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6",
+    "metrics": {
+      "width": 18,
+      "depth": 343,
+      "cx": 1267,
+      "u3": 1011,
+      "gates": 2278
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_parallel_multitrack_candidate/logo_oracle.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis_search/refined.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_parallel/best.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_schedule_refine/best.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_parallel_multitrack_candidate/exhaustive_verification.json",
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_parallel_multitrack_candidate/logo_oracle.validation.json",
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_parallel_multitrack_candidate/manifest.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis_search/refined.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_parallel/best.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_parallel/best.validation.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_parallel/exhaustive_verification.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_schedule_refine/best.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_schedule_refine/best.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_parallel_multitrack_candidate/exhaustive_verification.json",
+        "fields": {
+          "source.columns": 4096,
+          "source.gate_counts.cx": 1267,
+          "source.gate_counts.u3": 1011,
+          "source.width": 18,
+          "source.depth": 343,
+          "source.target_logical_data_mismatches": 0,
+          "source.max_column_l2_residual": 1.736235384011253e-14,
+          "source.operator_error_upper_bound_from_frobenius_and_truncation": 9.308477969397754e-13,
+          "source.passed": true,
+          "source.scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "source.qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6",
+          "exported_qasm.columns": 4096,
+          "exported_qasm.gate_counts.cx": 1267,
+          "exported_qasm.gate_counts.u3": 1011,
+          "exported_qasm.width": 18,
+          "exported_qasm.depth": 343,
+          "exported_qasm.target_logical_data_mismatches": 0,
+          "exported_qasm.max_column_l2_residual": 1.736235384011253e-14,
+          "exported_qasm.operator_error_upper_bound_from_frobenius_and_truncation": 9.308477969397754e-13,
+          "exported_qasm.passed": true,
+          "exported_qasm.scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "exported_qasm.qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6",
+          "scope": "All 4096 clean-input columns, numerically checked with one shared global phase; not symbolic or interval arithmetic."
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_parallel_multitrack_candidate/logo_oracle.validation.json",
+        "fields": {
+          "qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6",
+          "depth": 343,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_parallel_multitrack_candidate/manifest.json",
+        "fields": {
+          "width": 18,
+          "depth": 343,
+          "qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6",
+          "scope": "Oracle body only; QMOD main has 12 input-preparation H gates.",
+          "numerical_validation_passed": true,
+          "verification_scope": "All 4096 clean-input columns of source and exported QASM, numerically checked with one common global phase and bounded discarded monomial-classification entries; plus three random full-support states. Not a symbolic exact-arithmetic proof.",
+          "exhaustive_clean_input_columns": 4096,
+          "exhaustive_numerical_validation_passed": true,
+          "exhaustive_max_column_l2_residual": 1.736235384011253e-14,
+          "exhaustive_operator_error_estimate": 9.308477969397754e-13
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis_search/refined.report.json",
+        "fields": {
+          "depth": 343,
+          "width": 18,
+          "exact_logo_inputs": 4096,
+          "logo_mismatches": 0,
+          "saved_qasm_exhaustive_validation.columns": 4096,
+          "saved_qasm_exhaustive_validation.gate_counts.cx": 1267,
+          "saved_qasm_exhaustive_validation.gate_counts.u3": 1011,
+          "saved_qasm_exhaustive_validation.width": 18,
+          "saved_qasm_exhaustive_validation.depth": 343,
+          "saved_qasm_exhaustive_validation.target_logical_data_mismatches": 0,
+          "saved_qasm_exhaustive_validation.max_column_l2_residual": 1.736235384011253e-14,
+          "saved_qasm_exhaustive_validation.operator_error_upper_bound_from_frobenius_and_truncation": 9.308477969397754e-13,
+          "saved_qasm_exhaustive_validation.passed": true,
+          "saved_qasm_exhaustive_validation.scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "saved_qasm_exhaustive_validation.qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6",
+          "qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6",
+          "search_scope.bases": 5,
+          "search_scope.screened": 122,
+          "search_scope.full_oriented": 240,
+          "search_scope.seconds": 82.16296029090881
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_parallel/best.report.json",
+        "fields": {
+          "depth": 343,
+          "width": 18,
+          "qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6",
+          "search_scope.partitions_per_cost_mode": 511,
+          "search_scope.cost_modes": 4,
+          "search_scope.distinct_order_pairs": 1701,
+          "search_scope.screened": 32,
+          "search_scope.finalists": 8,
+          "search_scope.orientation_variants": 16,
+          "search_scope.full_final_circuits": 128,
+          "logical_certificate.inputs": 4096,
+          "logical_certificate.mismatches": 0,
+          "logical_certificate.scope": "Exact ideal-block composition; numerical local controlled-RX identities independently checked",
+          "saved_qasm_random_validation.qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6",
+          "saved_qasm_random_validation.depth": 343,
+          "saved_qasm_random_validation.width": 18,
+          "saved_qasm_random_validation.passed": true,
+          "saved_qasm_random_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof",
+          "saved_qasm_exhaustive_validation.columns": 4096,
+          "saved_qasm_exhaustive_validation.gate_counts.cx": 1267,
+          "saved_qasm_exhaustive_validation.gate_counts.u3": 1011,
+          "saved_qasm_exhaustive_validation.width": 18,
+          "saved_qasm_exhaustive_validation.depth": 343,
+          "saved_qasm_exhaustive_validation.target_logical_data_mismatches": 0,
+          "saved_qasm_exhaustive_validation.max_column_l2_residual": 1.736235384011253e-14,
+          "saved_qasm_exhaustive_validation.operator_error_upper_bound_from_frobenius_and_truncation": 9.308477969397754e-13,
+          "saved_qasm_exhaustive_validation.passed": true,
+          "saved_qasm_exhaustive_validation.scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "saved_qasm_exhaustive_validation.qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_parallel/best.validation.json",
+        "fields": {
+          "qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6",
+          "depth": 343,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_parallel/exhaustive_verification.json",
+        "fields": {
+          "columns": 4096,
+          "gate_counts.cx": 1267,
+          "gate_counts.u3": 1011,
+          "width": 18,
+          "depth": 343,
+          "target_logical_data_mismatches": 0,
+          "max_column_l2_residual": 1.736235384011253e-14,
+          "operator_error_upper_bound_from_frobenius_and_truncation": 9.308477969397754e-13,
+          "passed": true,
+          "scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_schedule_refine/best.report.json",
+        "fields": {
+          "depth": 343,
+          "width": 18,
+          "qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6",
+          "search_scope.random_schedule_trials": 1024,
+          "search_scope.distinct_legal_schedules": 687,
+          "search_scope.strict_candidates": 128,
+          "logical_certificate.inputs": 4096,
+          "logical_certificate.mismatches": 0,
+          "logical_certificate.scope": "Exact ideal-block composition; numerical local controlled-RX identities independently checked",
+          "saved_qasm_random_validation.qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6",
+          "saved_qasm_random_validation.depth": 343,
+          "saved_qasm_random_validation.width": 18,
+          "saved_qasm_random_validation.passed": true,
+          "saved_qasm_random_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof",
+          "saved_qasm_exhaustive_validation.columns": 4096,
+          "saved_qasm_exhaustive_validation.gate_counts.cx": 1267,
+          "saved_qasm_exhaustive_validation.gate_counts.u3": 1011,
+          "saved_qasm_exhaustive_validation.width": 18,
+          "saved_qasm_exhaustive_validation.depth": 343,
+          "saved_qasm_exhaustive_validation.target_logical_data_mismatches": 0,
+          "saved_qasm_exhaustive_validation.max_column_l2_residual": 1.736235384011253e-14,
+          "saved_qasm_exhaustive_validation.operator_error_upper_bound_from_frobenius_and_truncation": 9.308477969397754e-13,
+          "saved_qasm_exhaustive_validation.passed": true,
+          "saved_qasm_exhaustive_validation.scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "saved_qasm_exhaustive_validation.qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_schedule_refine/best.validation.json",
+        "fields": {
+          "qasm_sha256": "8f4230227f3f7d096bd91eb728d48de6eff49bfaa6c53c05c93d7454c6470cb6",
+          "depth": 343,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "4de1cb3b688188b509c9db6dc759f959255b4a412c931cdbe3993f55cb9072f4",
+    "metrics": {
+      "width": 18,
+      "depth": 344,
+      "cx": 1267,
+      "u3": 1010,
+      "gates": 2277
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_parallel/best_tket.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "5ac5e0e058f1e5731bb73dafac4882bb1384a9f92ae4ce88f74a31523d50631d",
+    "metrics": {
+      "width": 18,
+      "depth": 344,
+      "cx": 1267,
+      "u3": 1010,
+      "gates": 2277
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_parallel/best_tket_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "a096d862c8e55f5b83e2754740ec99606fba40b861d331625f8d7dec5600aa03",
+    "metrics": {
+      "width": 18,
+      "depth": 346,
+      "cx": 1271,
+      "u3": 1002,
+      "gates": 2273
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis_search/best_changed_basis.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis_search/best_changed_basis.report.json"
+    ],
+    "has_passed_true": false,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": false,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis_search/best_changed_basis.report.json",
+        "fields": {
+          "depth": 346,
+          "width": 18,
+          "exact_logo_inputs": 4096,
+          "logo_mismatches": 0,
+          "saved_qasm_exhaustive_validation.columns": 4096,
+          "saved_qasm_exhaustive_validation.gate_counts.cx": 1271,
+          "saved_qasm_exhaustive_validation.gate_counts.u3": 1002,
+          "saved_qasm_exhaustive_validation.width": 18,
+          "saved_qasm_exhaustive_validation.depth": 346,
+          "saved_qasm_exhaustive_validation.target_logical_data_mismatches": 0,
+          "saved_qasm_exhaustive_validation.max_column_l2_residual": 1.7117820670337304e-14,
+          "saved_qasm_exhaustive_validation.operator_error_upper_bound_from_frobenius_and_truncation": 9.162922282533864e-13,
+          "saved_qasm_exhaustive_validation.passed": true,
+          "saved_qasm_exhaustive_validation.scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "saved_qasm_exhaustive_validation.qasm_sha256": "a096d862c8e55f5b83e2754740ec99606fba40b861d331625f8d7dec5600aa03",
+          "qasm_sha256": "a096d862c8e55f5b83e2754740ec99606fba40b861d331625f8d7dec5600aa03"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "23cf28d5ac63c29f01f9f7bb8980c7920ff654a4315738ca3a56417c02d55113",
+    "metrics": {
+      "width": 18,
+      "depth": 346,
+      "cx": 1281,
+      "u3": 1013,
+      "gates": 2294
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis_search/best.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis_search/best.report.json"
+    ],
+    "has_passed_true": false,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": false,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis_search/best.report.json",
+        "fields": {
+          "depth": 346,
+          "width": 18,
+          "exact_logo_inputs": 4096,
+          "logo_mismatches": 0,
+          "saved_qasm_exhaustive_validation.columns": 4096,
+          "saved_qasm_exhaustive_validation.gate_counts.cx": 1281,
+          "saved_qasm_exhaustive_validation.gate_counts.u3": 1013,
+          "saved_qasm_exhaustive_validation.width": 18,
+          "saved_qasm_exhaustive_validation.depth": 346,
+          "saved_qasm_exhaustive_validation.target_logical_data_mismatches": 0,
+          "saved_qasm_exhaustive_validation.max_column_l2_residual": 1.7161172259038394e-14,
+          "saved_qasm_exhaustive_validation.operator_error_upper_bound_from_frobenius_and_truncation": 8.840678654065025e-13,
+          "saved_qasm_exhaustive_validation.passed": true,
+          "saved_qasm_exhaustive_validation.scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "saved_qasm_exhaustive_validation.qasm_sha256": "23cf28d5ac63c29f01f9f7bb8980c7920ff654a4315738ca3a56417c02d55113",
+          "search_scope.candidate_bases": 114,
+          "search_scope.new_strict_blocks": 330,
+          "search_scope.finalists": 6,
+          "search_scope.full_circuits": 216,
+          "search_scope.seconds": 130.97274827957153,
+          "qasm_sha256": "23cf28d5ac63c29f01f9f7bb8980c7920ff654a4315738ca3a56417c02d55113"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "0c9aed3b36734068f6ac18b39a1e91fc431d2cec1ee65333005a0ca7006ff89b",
+    "metrics": {
+      "width": 18,
+      "depth": 355,
+      "cx": 1293,
+      "u3": 1019,
+      "gates": 2312
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/integer_potential_lifts/best.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/integer_potential_lifts/best.validation.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/integer_potential_lifts/report.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/integer_potential_lifts/best.validation.json",
+        "fields": {
+          "qasm_sha256": "0c9aed3b36734068f6ac18b39a1e91fc431d2cec1ee65333005a0ca7006ff89b",
+          "depth": 355,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/integer_potential_lifts/report.json",
+        "fields": {
+          "depth": 355,
+          "width": 18,
+          "all_lane_integer_differences_telescope": true,
+          "verification.columns": 4096,
+          "verification.gate_counts.cx": 1293,
+          "verification.gate_counts.u3": 1019,
+          "verification.width": 18,
+          "verification.depth": 355,
+          "verification.target_logical_data_mismatches": 0,
+          "verification.max_column_l2_residual": 1.67213267518407e-14,
+          "verification.operator_error_upper_bound_from_frobenius_and_truncation": 9.11063129967712e-13,
+          "verification.passed": true,
+          "verification.scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "verification.qasm_sha256": "0c9aed3b36734068f6ac18b39a1e91fc431d2cec1ee65333005a0ca7006ff89b",
+          "random_validation.qasm_sha256": "0c9aed3b36734068f6ac18b39a1e91fc431d2cec1ee65333005a0ca7006ff89b",
+          "random_validation.depth": 355,
+          "random_validation.width": 18,
+          "random_validation.passed": true,
+          "random_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof",
+          "qasm_sha256": "0c9aed3b36734068f6ac18b39a1e91fc431d2cec1ee65333005a0ca7006ff89b",
+          "comparison.original_fixed_tour_depth": 364,
+          "comparison.lifted_fixed_tour_depth": 355
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "b846082695779338c59bec50ddc26c11e6fc5ec5d694bfabeee38f3fa2b16583",
+    "metrics": {
+      "width": 18,
+      "depth": 356,
+      "cx": 1331,
+      "u3": 1040,
+      "gates": 2371
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/signed_potential_rx/best.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/signed_potential_rx/best.report.json"
+    ],
+    "has_passed_true": false,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": false,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/signed_potential_rx/best.report.json",
+        "fields": {
+          "depth": 356,
+          "width": 18,
+          "verification.columns": 4096,
+          "verification.gate_counts.cx": 1331,
+          "verification.gate_counts.u3": 1040,
+          "verification.width": 18,
+          "verification.depth": 356,
+          "verification.target_logical_data_mismatches": 0,
+          "verification.max_column_l2_residual": 1.650355910003783e-14,
+          "verification.operator_error_upper_bound_from_frobenius_and_truncation": 8.571319414098726e-13,
+          "verification.passed": true,
+          "verification.scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "verification.qasm_sha256": "b846082695779338c59bec50ddc26c11e6fc5ec5d694bfabeee38f3fa2b16583",
+          "qasm_sha256": "b846082695779338c59bec50ddc26c11e6fc5ec5d694bfabeee38f3fa2b16583",
+          "logical_certificate.inputs": 4096,
+          "logical_certificate.mismatches": 0,
+          "search_scope.local_undirected_edges": 110,
+          "search_scope.distinct_tours": 1737,
+          "search_scope.full_circuits": 32
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "91c8f5fffd5b616508076d6dee78f02c6bdf2c1311ec6f35d6d15ae1172b3d37",
+    "metrics": {
+      "width": 18,
+      "depth": 372,
+      "cx": 1199,
+      "u3": 955,
+      "gates": 2154
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_tour_search/best.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/linear_frame_batch/multitrack_tour_best.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_tour_search/best.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_tour_search/best.validation.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_tour_search/exhaustive_verification.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/linear_frame_batch/multitrack_tour_best.json",
+        "fields": {
+          "columns": 4096,
+          "gate_counts.cx": 1199,
+          "gate_counts.u3": 955,
+          "width": 18,
+          "depth": 372,
+          "target_logical_data_mismatches": 0,
+          "max_column_l2_residual": 1.5660729012971885e-14,
+          "operator_error_upper_bound_from_frobenius_and_truncation": 8.25358651819964e-13,
+          "passed": true,
+          "scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "qasm_sha256": "91c8f5fffd5b616508076d6dee78f02c6bdf2c1311ec6f35d6d15ae1172b3d37"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_tour_search/best.report.json",
+        "fields": {
+          "depth": 372,
+          "width": 18,
+          "qasm_sha256": "91c8f5fffd5b616508076d6dee78f02c6bdf2c1311ec6f35d6d15ae1172b3d37",
+          "saved_qasm_random_validation.qasm_sha256": "91c8f5fffd5b616508076d6dee78f02c6bdf2c1311ec6f35d6d15ae1172b3d37",
+          "saved_qasm_random_validation.depth": 372,
+          "saved_qasm_random_validation.width": 18,
+          "saved_qasm_random_validation.passed": true,
+          "saved_qasm_random_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof",
+          "saved_qasm_exhaustive_validation.columns": 4096,
+          "saved_qasm_exhaustive_validation.gate_counts.cx": 1199,
+          "saved_qasm_exhaustive_validation.gate_counts.u3": 955,
+          "saved_qasm_exhaustive_validation.width": 18,
+          "saved_qasm_exhaustive_validation.depth": 372,
+          "saved_qasm_exhaustive_validation.target_logical_data_mismatches": 0,
+          "saved_qasm_exhaustive_validation.max_column_l2_residual": 1.5660729012971885e-14,
+          "saved_qasm_exhaustive_validation.passed": true,
+          "saved_qasm_exhaustive_validation.scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "saved_qasm_exhaustive_validation.qasm_sha256": "91c8f5fffd5b616508076d6dee78f02c6bdf2c1311ec6f35d6d15ae1172b3d37",
+          "logical_certificate.inputs": 4096,
+          "logical_certificate.mismatches": 0,
+          "logical_certificate.scope": "Exact integer ideal-block composition; local blocks separately numerically verified on all 128 input columns"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_tour_search/best.validation.json",
+        "fields": {
+          "qasm_sha256": "91c8f5fffd5b616508076d6dee78f02c6bdf2c1311ec6f35d6d15ae1172b3d37",
+          "depth": 372,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_tour_search/exhaustive_verification.json",
+        "fields": {
+          "columns": 4096,
+          "gate_counts.cx": 1199,
+          "gate_counts.u3": 955,
+          "width": 18,
+          "depth": 372,
+          "target_logical_data_mismatches": 0,
+          "max_column_l2_residual": 1.5660729012971885e-14,
+          "passed": true,
+          "scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "qasm_sha256": "91c8f5fffd5b616508076d6dee78f02c6bdf2c1311ec6f35d6d15ae1172b3d37"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "b654376ce152bf729f55b8c4cf937f7714602445761c51d43d086f3e998bc3bb",
+    "metrics": {
+      "width": 18,
+      "depth": 375,
+      "cx": 1229,
+      "u3": 955,
+      "gates": 2184
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis/basis_3_complement1.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/linear_frame_batch/multitrack_basis375.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis/basis_3.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis/basis_3_complement1.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/linear_frame_batch/multitrack_basis375.json",
+        "fields": {
+          "columns": 4096,
+          "gate_counts.cx": 1229,
+          "gate_counts.u3": 955,
+          "width": 18,
+          "depth": 375,
+          "target_logical_data_mismatches": 0,
+          "max_column_l2_residual": 1.5166516545385385e-14,
+          "operator_error_upper_bound_from_frobenius_and_truncation": 8.107561718257948e-13,
+          "passed": true,
+          "scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "qasm_sha256": "b654376ce152bf729f55b8c4cf937f7714602445761c51d43d086f3e998bc3bb"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis/basis_3.report.json",
+        "fields": {
+          "exact_logo_inputs": 4096,
+          "logo_mismatches": 0,
+          "best.depth": 375,
+          "best.width": 18,
+          "random_fullsupport.qasm_sha256": "b654376ce152bf729f55b8c4cf937f7714602445761c51d43d086f3e998bc3bb",
+          "random_fullsupport.depth": 375,
+          "random_fullsupport.width": 18,
+          "random_fullsupport.passed": true,
+          "random_fullsupport.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis/basis_3_complement1.validation.json",
+        "fields": {
+          "qasm_sha256": "b654376ce152bf729f55b8c4cf937f7714602445761c51d43d086f3e998bc3bb",
+          "depth": 375,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "ffc430548c0137bb5dbc7ffb4aaecb9d6c2b0c88d5de82b96559863ce1d025af",
+    "metrics": {
+      "width": 18,
+      "depth": 375,
+      "cx": 1233,
+      "u3": 955,
+      "gates": 2188
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis/basis_3_complement3.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "b7d14bb808c26036b6364f51ce1f3bc5a1e843195a882395b0e05c8dcb5bb6c7",
+    "metrics": {
+      "width": 18,
+      "depth": 375,
+      "cx": 1235,
+      "u3": 955,
+      "gates": 2190
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis/basis_3_complement0.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "69395b73838b5fddfea914027a00586046bc9ebfe3732c6f065a1cc69256edc7",
+    "metrics": {
+      "width": 18,
+      "depth": 375,
+      "cx": 1239,
+      "u3": 955,
+      "gates": 2194
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_basis/basis_3_complement2.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "162cec716ea3a2624187dfeb99ed5ec6bc610d868e4456fbad891d4a288964cd",
+    "metrics": {
+      "width": 18,
+      "depth": 380,
+      "cx": 1199,
+      "u3": 954,
+      "gates": 2153
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_tour_search/best_tket_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "73be48d195c370167c06108b10e2c73744eb3ca8a9cc6c65a18004c38e6927a1",
+    "metrics": {
+      "width": 18,
+      "depth": 380,
+      "cx": 1199,
+      "u3": 954,
+      "gates": 2153
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_tour_search/best_tket.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "174372c389692efa8e60dd3d0f1779f313eb25bdd90351efdca6f55a5d5c6c13",
+    "metrics": {
+      "width": 18,
+      "depth": 387,
+      "cx": 1289,
+      "u3": 1071,
+      "gates": 2360
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_rx/oracle_complement3.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/linear_frame_batch/multitrack_original387.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_rx/integration_report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_rx/oracle_complement3.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/linear_frame_batch/multitrack_original387.json",
+        "fields": {
+          "columns": 4096,
+          "gate_counts.cx": 1289,
+          "gate_counts.u3": 1071,
+          "width": 18,
+          "depth": 387,
+          "target_logical_data_mismatches": 0,
+          "max_column_l2_residual": 1.8054644323726837e-14,
+          "operator_error_upper_bound_from_frobenius_and_truncation": 8.866678278776586e-13,
+          "passed": true,
+          "scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "qasm_sha256": "174372c389692efa8e60dd3d0f1779f313eb25bdd90351efdca6f55a5d5c6c13"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_rx/integration_report.json",
+        "fields": {
+          "best.depth": 387,
+          "best.width": 18,
+          "logical_inputs_checked": 4096,
+          "logical_mismatches": 0,
+          "logical_scope": "All Boolean, coordinate-restoration, flag-closure and modular-phase cases; local floating-point Operator checks compose by restored clean rails",
+          "saved_qasm_random_validation.qasm_sha256": "174372c389692efa8e60dd3d0f1779f313eb25bdd90351efdca6f55a5d5c6c13",
+          "saved_qasm_random_validation.depth": 387,
+          "saved_qasm_random_validation.width": 18,
+          "saved_qasm_random_validation.passed": true,
+          "saved_qasm_random_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_rx/oracle_complement3.validation.json",
+        "fields": {
+          "qasm_sha256": "174372c389692efa8e60dd3d0f1779f313eb25bdd90351efdca6f55a5d5c6c13",
+          "depth": 387,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "8566da31d17c9ab7d23b8cbee6ea24191f9b1d66a1c86dd4a0cb5f9e84a10270",
+    "metrics": {
+      "width": 18,
+      "depth": 387,
+      "cx": 1289,
+      "u3": 1071,
+      "gates": 2360
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_frame_fusion/fused_complement3.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_frame_fusion/fused_complement3.validation.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_frame_fusion/report.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": false,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_frame_fusion/fused_complement3.validation.json",
+        "fields": {
+          "qasm_sha256": "8566da31d17c9ab7d23b8cbee6ea24191f9b1d66a1c86dd4a0cb5f9e84a10270",
+          "depth": 387,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_frame_fusion/report.json",
+        "fields": {
+          "boundary.full_8_qubit_operator_error": 0.0,
+          "best.depth": 387,
+          "saved_qasm_random_validation.qasm_sha256": "8566da31d17c9ab7d23b8cbee6ea24191f9b1d66a1c86dd4a0cb5f9e84a10270",
+          "saved_qasm_random_validation.depth": 387,
+          "saved_qasm_random_validation.width": 18,
+          "saved_qasm_random_validation.passed": true,
+          "saved_qasm_random_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof",
+          "scope": "Exact full-unitary local frame extraction identities plus saved-oracle random validation. No unchecked dirty-rail substitution."
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "2bf1f948fb7c4635197117f41ce1a98947ce1f66861030ff55f81d6f9f6b8ddb",
+    "metrics": {
+      "width": 18,
+      "depth": 387,
+      "cx": 1291,
+      "u3": 1071,
+      "gates": 2362
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_rx/oracle_complement2.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "36c91e2f9da871db0d6be6b055c225205bb1b77f2a618c49a70511dffc71a9bb",
+    "metrics": {
+      "width": 18,
+      "depth": 387,
+      "cx": 1291,
+      "u3": 1071,
+      "gates": 2362
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_frame_fusion/fused_complement2.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "42d208629e97ebb2574f647ae2d5cc3c24c6937e18173e0d29a25a05d7203376",
+    "metrics": {
+      "width": 18,
+      "depth": 387,
+      "cx": 1293,
+      "u3": 1071,
+      "gates": 2364
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_frame_fusion/fused_complement1.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "de9b4425b262169a8f04655de6439f9d50124850f59d6a76cc3d44767049efd4",
+    "metrics": {
+      "width": 18,
+      "depth": 387,
+      "cx": 1293,
+      "u3": 1071,
+      "gates": 2364
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_rx/oracle_complement1.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "21282e07d70e2013b47b075a91ee4465f40725cf43d33c8d8b075b8c5cddc897",
+    "metrics": {
+      "width": 18,
+      "depth": 387,
+      "cx": 1295,
+      "u3": 1071,
+      "gates": 2366
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_frame_fusion/fused_complement0.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "4b4778024556f113289505c3f14e40b56354800ec5f0108db61532525284622f",
+    "metrics": {
+      "width": 18,
+      "depth": 387,
+      "cx": 1295,
+      "u3": 1071,
+      "gates": 2366
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_rx/oracle_complement0.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "0615c1fecb4f1304e947daf0e3f5354c78ffe1ba83ea7c5b5618306a0bd9b986",
+    "metrics": {
+      "width": 18,
+      "depth": 390,
+      "cx": 1289,
+      "u3": 1071,
+      "gates": 2360
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_rx/oracle_complement3_tket.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "2e1387ea537d858fa9f48b9161c8af0abb9c5e81b489ace5acbcb2cc05ab100c",
+    "metrics": {
+      "width": 18,
+      "depth": 390,
+      "cx": 1289,
+      "u3": 1071,
+      "gates": 2360
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_rx/oracle_complement3_tket_strict.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/linear_frame_batch/multitrack_original_tket.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": false,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/linear_frame_batch/multitrack_original_tket.json",
+        "fields": {
+          "columns": 4096,
+          "gate_counts.u3": 1071,
+          "gate_counts.cx": 1289,
+          "width": 18,
+          "depth": 390,
+          "target_logical_data_mismatches": 0,
+          "max_column_l2_residual": 4.2560682275587914e-14,
+          "passed": true,
+          "scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "qasm_sha256": "2e1387ea537d858fa9f48b9161c8af0abb9c5e81b489ace5acbcb2cc05ab100c"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "b86eeefd0db13f7187a89f4ad98786c290c4763b44900f116b03a500090ed203",
+    "metrics": {
+      "width": 18,
+      "depth": 478,
+      "cx": 320,
+      "u3": 416,
+      "gates": 736
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/rank_circuit/geometry_prefix_rectangles.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "bed3383dd808f520addf17976f01b515858753ad7aeb698c87e335d9e7e8ca49",
+    "metrics": {
+      "width": 18,
+      "depth": 508,
+      "cx": 1301,
+      "u3": 955,
+      "gates": 2256
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/rotation_tour_search/best.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/rotation_tour_search/best.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/rotation_tour_search/best.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/rotation_tour_search/best.report.json",
+        "fields": {
+          "depth": 508,
+          "width": 18,
+          "qasm_sha256": "bed3383dd808f520addf17976f01b515858753ad7aeb698c87e335d9e7e8ca49",
+          "saved_qasm_random_validation.qasm_sha256": "bed3383dd808f520addf17976f01b515858753ad7aeb698c87e335d9e7e8ca49",
+          "saved_qasm_random_validation.depth": 508,
+          "saved_qasm_random_validation.width": 18,
+          "saved_qasm_random_validation.passed": true,
+          "saved_qasm_random_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof",
+          "saved_qasm_exhaustive_validation.columns": 4096,
+          "saved_qasm_exhaustive_validation.gate_counts.cx": 1301,
+          "saved_qasm_exhaustive_validation.gate_counts.u3": 955,
+          "saved_qasm_exhaustive_validation.width": 18,
+          "saved_qasm_exhaustive_validation.depth": 508,
+          "saved_qasm_exhaustive_validation.data_label_mismatches": 0,
+          "saved_qasm_exhaustive_validation.max_column_l2_residual": 1.533529975323666e-14,
+          "saved_qasm_exhaustive_validation.passed": true,
+          "saved_qasm_exhaustive_validation.scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "saved_qasm_exhaustive_validation.qasm_sha256": "bed3383dd808f520addf17976f01b515858753ad7aeb698c87e335d9e7e8ca49"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/rotation_tour_search/best.validation.json",
+        "fields": {
+          "qasm_sha256": "bed3383dd808f520addf17976f01b515858753ad7aeb698c87e335d9e7e8ca49",
+          "depth": 508,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "cd4b36b8b81f6e1522b14a27c98b76e3a797601d9ebcee64a991d39ab32c866a",
+    "metrics": {
+      "width": 18,
+      "depth": 525,
+      "cx": 1411,
+      "u3": 1071,
+      "gates": 2482
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_oriented_rotation_candidate/logo_oracle.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement3.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_oriented_rotation_candidate/exhaustive_verification.json",
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_oriented_rotation_candidate/logo_oracle.validation.json",
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_oriented_rotation_candidate/manifest.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement3.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement3.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_oriented_rotation_candidate/exhaustive_verification.json",
+        "fields": {
+          "source.columns": 4096,
+          "source.gate_counts.cx": 1411,
+          "source.gate_counts.u3": 1071,
+          "source.width": 18,
+          "source.depth": 525,
+          "source.data_label_mismatches": 0,
+          "source.max_column_l2_residual": 1.61252875134625e-14,
+          "source.passed": true,
+          "source.scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "source.qasm_sha256": "cd4b36b8b81f6e1522b14a27c98b76e3a797601d9ebcee64a991d39ab32c866a",
+          "exported_qasm.columns": 4096,
+          "exported_qasm.gate_counts.cx": 1411,
+          "exported_qasm.gate_counts.u3": 1071,
+          "exported_qasm.width": 18,
+          "exported_qasm.depth": 525,
+          "exported_qasm.data_label_mismatches": 0,
+          "exported_qasm.max_column_l2_residual": 1.61252875134625e-14,
+          "exported_qasm.passed": true,
+          "exported_qasm.scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "exported_qasm.qasm_sha256": "cd4b36b8b81f6e1522b14a27c98b76e3a797601d9ebcee64a991d39ab32c866a",
+          "scope": "All 4096 clean-input columns, numerically checked with one shared global phase; not symbolic or interval arithmetic."
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_oriented_rotation_candidate/logo_oracle.validation.json",
+        "fields": {
+          "qasm_sha256": "cd4b36b8b81f6e1522b14a27c98b76e3a797601d9ebcee64a991d39ab32c866a",
+          "depth": 525,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_oriented_rotation_candidate/manifest.json",
+        "fields": {
+          "width": 18,
+          "depth": 525,
+          "qasm_sha256": "cd4b36b8b81f6e1522b14a27c98b76e3a797601d9ebcee64a991d39ab32c866a",
+          "scope": "Oracle body only; QMOD main has 12 input-preparation H gates.",
+          "numerical_validation_passed": true,
+          "verification_scope": "All 4096 clean-input columns of source and exported QASM, numerically checked with one common global phase and bounded discarded monomial-classification entries; plus three random full-support states. Not a symbolic exact-arithmetic proof.",
+          "exhaustive_clean_input_columns": 4096,
+          "exhaustive_numerical_validation_passed": true,
+          "exhaustive_max_column_l2_residual": 1.61252875134625e-14
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement3.report.json",
+        "fields": {
+          "width": 18,
+          "depth": 525,
+          "logical_inputs_checked": 4096,
+          "logical_mismatches": 0,
+          "saved_qasm_random_validation.qasm_sha256": "cd4b36b8b81f6e1522b14a27c98b76e3a797601d9ebcee64a991d39ab32c866a",
+          "saved_qasm_random_validation.depth": 525,
+          "saved_qasm_random_validation.width": 18,
+          "saved_qasm_random_validation.passed": true,
+          "saved_qasm_random_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof",
+          "saved_qasm_exhaustive_validation.columns": 4096,
+          "saved_qasm_exhaustive_validation.gate_counts.cx": 1411,
+          "saved_qasm_exhaustive_validation.gate_counts.u3": 1071,
+          "saved_qasm_exhaustive_validation.width": 18,
+          "saved_qasm_exhaustive_validation.depth": 525,
+          "saved_qasm_exhaustive_validation.data_label_mismatches": 0,
+          "saved_qasm_exhaustive_validation.max_column_l2_residual": 1.61252875134625e-14,
+          "saved_qasm_exhaustive_validation.passed": true,
+          "saved_qasm_exhaustive_validation.scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "saved_qasm_exhaustive_validation.qasm_sha256": "cd4b36b8b81f6e1522b14a27c98b76e3a797601d9ebcee64a991d39ab32c866a"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement3.validation.json",
+        "fields": {
+          "qasm_sha256": "cd4b36b8b81f6e1522b14a27c98b76e3a797601d9ebcee64a991d39ab32c866a",
+          "depth": 525,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "735c24a1779e695afcfce148c34681ee077c3fd6a5acf006c803fe5885907d32",
+    "metrics": {
+      "width": 18,
+      "depth": 528,
+      "cx": 1413,
+      "u3": 1071,
+      "gates": 2484
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement1.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement1.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement1.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement1.report.json",
+        "fields": {
+          "width": 18,
+          "depth": 528,
+          "logical_inputs_checked": 4096,
+          "logical_mismatches": 0,
+          "saved_qasm_random_validation.qasm_sha256": "735c24a1779e695afcfce148c34681ee077c3fd6a5acf006c803fe5885907d32",
+          "saved_qasm_random_validation.depth": 528,
+          "saved_qasm_random_validation.width": 18,
+          "saved_qasm_random_validation.passed": true,
+          "saved_qasm_random_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof",
+          "saved_qasm_exhaustive_validation.columns": 4096,
+          "saved_qasm_exhaustive_validation.gate_counts.cx": 1413,
+          "saved_qasm_exhaustive_validation.gate_counts.u3": 1071,
+          "saved_qasm_exhaustive_validation.width": 18,
+          "saved_qasm_exhaustive_validation.depth": 528,
+          "saved_qasm_exhaustive_validation.data_label_mismatches": 0,
+          "saved_qasm_exhaustive_validation.max_column_l2_residual": 1.7118624529155395e-14,
+          "saved_qasm_exhaustive_validation.passed": true,
+          "saved_qasm_exhaustive_validation.scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "saved_qasm_exhaustive_validation.qasm_sha256": "735c24a1779e695afcfce148c34681ee077c3fd6a5acf006c803fe5885907d32"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement1.validation.json",
+        "fields": {
+          "qasm_sha256": "735c24a1779e695afcfce148c34681ee077c3fd6a5acf006c803fe5885907d32",
+          "depth": 528,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "19f38a1a0853cb9f127c2f73700f968554f1c5ca03af3840a9b63806bb5d5898",
+    "metrics": {
+      "width": 18,
+      "depth": 530,
+      "cx": 1399,
+      "u3": 1071,
+      "gates": 2470
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement2.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement2.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement2.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement2.report.json",
+        "fields": {
+          "width": 18,
+          "depth": 530,
+          "logical_inputs_checked": 4096,
+          "logical_mismatches": 0,
+          "saved_qasm_random_validation.qasm_sha256": "19f38a1a0853cb9f127c2f73700f968554f1c5ca03af3840a9b63806bb5d5898",
+          "saved_qasm_random_validation.depth": 530,
+          "saved_qasm_random_validation.width": 18,
+          "saved_qasm_random_validation.passed": true,
+          "saved_qasm_random_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof",
+          "saved_qasm_exhaustive_validation.columns": 4096,
+          "saved_qasm_exhaustive_validation.gate_counts.cx": 1399,
+          "saved_qasm_exhaustive_validation.gate_counts.u3": 1071,
+          "saved_qasm_exhaustive_validation.width": 18,
+          "saved_qasm_exhaustive_validation.depth": 530,
+          "saved_qasm_exhaustive_validation.data_label_mismatches": 0,
+          "saved_qasm_exhaustive_validation.max_column_l2_residual": 1.6106921633889012e-14,
+          "saved_qasm_exhaustive_validation.passed": true,
+          "saved_qasm_exhaustive_validation.scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "saved_qasm_exhaustive_validation.qasm_sha256": "19f38a1a0853cb9f127c2f73700f968554f1c5ca03af3840a9b63806bb5d5898"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement2.validation.json",
+        "fields": {
+          "qasm_sha256": "19f38a1a0853cb9f127c2f73700f968554f1c5ca03af3840a9b63806bb5d5898",
+          "depth": 530,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "1d780e1211cc383f494f633f00346f75a7fdcc7e2e936dc235864a4f74c08dd2",
+    "metrics": {
+      "width": 18,
+      "depth": 530,
+      "cx": 1411,
+      "u3": 1079,
+      "gates": 2490
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement3_tket.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "8be477d7363c0260e5ad45f2c1773f7610fa3bc3669f51d993d65c348d0a0846",
+    "metrics": {
+      "width": 18,
+      "depth": 530,
+      "cx": 1411,
+      "u3": 1079,
+      "gates": 2490
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle_complement3_tket_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "8553491dc17ae8ea3433754efff4f91e735e8b22135c251ea0da622e06fbd4c6",
+    "metrics": {
+      "width": 18,
+      "depth": 533,
+      "cx": 1401,
+      "u3": 1071,
+      "gates": 2472
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle.report.json",
+        "fields": {
+          "width": 18,
+          "depth": 533,
+          "logical_inputs_checked": 4096,
+          "logical_mismatches": 0,
+          "saved_qasm_random_validation.qasm_sha256": "8553491dc17ae8ea3433754efff4f91e735e8b22135c251ea0da622e06fbd4c6",
+          "saved_qasm_random_validation.depth": 533,
+          "saved_qasm_random_validation.width": 18,
+          "saved_qasm_random_validation.passed": true,
+          "saved_qasm_random_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof",
+          "saved_qasm_exhaustive_validation.columns": 4096,
+          "saved_qasm_exhaustive_validation.gate_counts.cx": 1401,
+          "saved_qasm_exhaustive_validation.gate_counts.u3": 1071,
+          "saved_qasm_exhaustive_validation.width": 18,
+          "saved_qasm_exhaustive_validation.depth": 533,
+          "saved_qasm_exhaustive_validation.data_label_mismatches": 0,
+          "saved_qasm_exhaustive_validation.max_column_l2_residual": 1.681437194887767e-14,
+          "saved_qasm_exhaustive_validation.passed": true,
+          "saved_qasm_exhaustive_validation.scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "saved_qasm_exhaustive_validation.qasm_sha256": "8553491dc17ae8ea3433754efff4f91e735e8b22135c251ea0da622e06fbd4c6"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/oriented_rotation_stream/oriented_rotation_oracle.validation.json",
+        "fields": {
+          "qasm_sha256": "8553491dc17ae8ea3433754efff4f91e735e8b22135c251ea0da622e06fbd4c6",
+          "depth": 533,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "47979e8befe29d7567c3042a5d31042d13c9faabf705d452a2a4958f5311b0cd",
+    "metrics": {
+      "width": 18,
+      "depth": 569,
+      "cx": 324,
+      "u3": 383,
+      "gates": 707
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/rank_circuit/geometry_comparator_rectangles.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "af8ecdbfe9e93302dd8fa4301459dfa25a4e723e72f7f39e1310e13d8e860ead",
+    "metrics": {
+      "width": 18,
+      "depth": 576,
+      "cx": 1388,
+      "u3": 1067,
+      "gates": 2455
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_rotation_stream/common_affine_phase_min_report_rotation_corrected_tket.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "d6fbe8887f5207a88ae171fb153b181434f558954e6191111b41c5660774c7b9",
+    "metrics": {
+      "width": 18,
+      "depth": 576,
+      "cx": 1388,
+      "u3": 1067,
+      "gates": 2455
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_rotation_stream/common_affine_phase_min_report_rotation_corrected_tket_strict.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_closed_rotation_candidate/exhaustive_verification.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/clean_subspace_batch/rotation_tket.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_rotation_stream/common_affine_phase_min_report_rotation_corrected_tket_strict.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_closed_rotation_candidate/exhaustive_verification.json",
+        "fields": {
+          "source.columns": 4096,
+          "source.gate_counts.u3": 1067,
+          "source.gate_counts.cx": 1388,
+          "source.width": 18,
+          "source.depth": 576,
+          "source.data_label_mismatches": 0,
+          "source.max_column_l2_residual": 3.7021114107100254e-14,
+          "source.passed": true,
+          "source.scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "source.qasm_sha256": "d6fbe8887f5207a88ae171fb153b181434f558954e6191111b41c5660774c7b9",
+          "exported_qasm.columns": 4096,
+          "exported_qasm.gate_counts.u3": 1067,
+          "exported_qasm.gate_counts.cx": 1388,
+          "exported_qasm.width": 18,
+          "exported_qasm.depth": 576,
+          "exported_qasm.data_label_mismatches": 0,
+          "exported_qasm.max_column_l2_residual": 3.7021114107100254e-14,
+          "exported_qasm.passed": true,
+          "exported_qasm.scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "exported_qasm.qasm_sha256": "e190588c16f63573d3b6dbc20e408cd12b2b41a17d59ba93499cbce29217c4a5",
+          "scope": "All 4096 clean-input columns, numerically checked with one shared global phase; not symbolic or interval arithmetic."
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/clean_subspace_batch/rotation_tket.json",
+        "fields": {
+          "columns": 4096,
+          "gate_counts.u3": 1067,
+          "gate_counts.cx": 1388,
+          "width": 18,
+          "depth": 576,
+          "data_label_mismatches": 0,
+          "max_column_l2_residual": 3.7021114107100254e-14,
+          "passed": true,
+          "scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "qasm_sha256": "d6fbe8887f5207a88ae171fb153b181434f558954e6191111b41c5660774c7b9"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_rotation_stream/common_affine_phase_min_report_rotation_corrected_tket_strict.validation.json",
+        "fields": {
+          "qasm_sha256": "d6fbe8887f5207a88ae171fb153b181434f558954e6191111b41c5660774c7b9",
+          "depth": 576,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "e190588c16f63573d3b6dbc20e408cd12b2b41a17d59ba93499cbce29217c4a5",
+    "metrics": {
+      "width": 18,
+      "depth": 576,
+      "cx": 1388,
+      "u3": 1067,
+      "gates": 2455
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_closed_rotation_candidate/logo_oracle.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_closed_rotation_candidate/exhaustive_verification.json",
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_closed_rotation_candidate/logo_oracle.validation.json",
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_closed_rotation_candidate/manifest.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/clean_subspace_batch/packaged_rotation576.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/linear_frame_batch/packaged576.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_closed_rotation_candidate/exhaustive_verification.json",
+        "fields": {
+          "source.columns": 4096,
+          "source.gate_counts.u3": 1067,
+          "source.gate_counts.cx": 1388,
+          "source.width": 18,
+          "source.depth": 576,
+          "source.data_label_mismatches": 0,
+          "source.max_column_l2_residual": 3.7021114107100254e-14,
+          "source.passed": true,
+          "source.scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "source.qasm_sha256": "d6fbe8887f5207a88ae171fb153b181434f558954e6191111b41c5660774c7b9",
+          "exported_qasm.columns": 4096,
+          "exported_qasm.gate_counts.u3": 1067,
+          "exported_qasm.gate_counts.cx": 1388,
+          "exported_qasm.width": 18,
+          "exported_qasm.depth": 576,
+          "exported_qasm.data_label_mismatches": 0,
+          "exported_qasm.max_column_l2_residual": 3.7021114107100254e-14,
+          "exported_qasm.passed": true,
+          "exported_qasm.scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "exported_qasm.qasm_sha256": "e190588c16f63573d3b6dbc20e408cd12b2b41a17d59ba93499cbce29217c4a5",
+          "scope": "All 4096 clean-input columns, numerically checked with one shared global phase; not symbolic or interval arithmetic."
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_closed_rotation_candidate/logo_oracle.validation.json",
+        "fields": {
+          "qasm_sha256": "e190588c16f63573d3b6dbc20e408cd12b2b41a17d59ba93499cbce29217c4a5",
+          "depth": 576,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_closed_rotation_candidate/manifest.json",
+        "fields": {
+          "width": 18,
+          "depth": 576,
+          "qasm_sha256": "e190588c16f63573d3b6dbc20e408cd12b2b41a17d59ba93499cbce29217c4a5",
+          "scope": "Oracle body only; QMOD main has 12 input-preparation H gates.",
+          "numerical_validation_passed": true,
+          "verification_scope": "All 4096 clean-input columns of source and exported QASM, numerically checked with one common global phase and bounded discarded monomial-classification entries; plus three random full-support states. Not a symbolic exact-arithmetic proof.",
+          "exhaustive_clean_input_columns": 4096,
+          "exhaustive_numerical_validation_passed": true,
+          "exhaustive_max_column_l2_residual": 3.7021114107100254e-14
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/clean_subspace_batch/packaged_rotation576.json",
+        "fields": {
+          "columns": 4096,
+          "gate_counts.u3": 1067,
+          "gate_counts.cx": 1388,
+          "width": 18,
+          "depth": 576,
+          "data_label_mismatches": 0,
+          "max_column_l2_residual": 3.7021114107100254e-14,
+          "passed": true,
+          "scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "qasm_sha256": "e190588c16f63573d3b6dbc20e408cd12b2b41a17d59ba93499cbce29217c4a5"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/linear_frame_batch/packaged576.json",
+        "fields": {
+          "columns": 4096,
+          "gate_counts.u3": 1067,
+          "gate_counts.cx": 1388,
+          "width": 18,
+          "depth": 576,
+          "target_logical_data_mismatches": 0,
+          "max_column_l2_residual": 3.575440775070503e-14,
+          "passed": true,
+          "scope": "Exhaustive floating-point numerical test of all clean-input columns, one common global phase. Explicit conservative structural truncation bound; not a symbolic or interval-arithmetic proof.",
+          "qasm_sha256": "e190588c16f63573d3b6dbc20e408cd12b2b41a17d59ba93499cbce29217c4a5"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "5699f267392c406a39e48ae8cafb72cddea4eeb2f4625dd476f351d5807d5992",
+    "metrics": {
+      "width": 18,
+      "depth": 578,
+      "cx": 1396,
+      "u3": 1063,
+      "gates": 2459
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_rotation_stream/common_affine_phase_min_report_rotation_corrected.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_rotation_stream/common_affine_phase_min_report_rotation_corrected.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_rotation_stream/common_affine_phase_min_report_rotation_corrected.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_rotation_stream/common_affine_phase_min_report_rotation_corrected.report.json",
+        "fields": {
+          "width": 18,
+          "depth": 578,
+          "uncorrected_stream_excluding_final_affine.depth": 522,
+          "corrections.x.depth": 41,
+          "corrections.y.depth": 44,
+          "logical_inputs_checked": 4096,
+          "logical_mismatches": 0,
+          "logical_scope": "Exact flag/coordinate and mod8 phase bookkeeping up to common global phase",
+          "saved_qasm_validation.qasm_sha256": "5699f267392c406a39e48ae8cafb72cddea4eeb2f4625dd476f351d5807d5992",
+          "saved_qasm_validation.depth": 578,
+          "saved_qasm_validation.width": 18,
+          "saved_qasm_validation.passed": true,
+          "saved_qasm_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_rotation_stream/common_affine_phase_min_report_rotation_corrected.validation.json",
+        "fields": {
+          "qasm_sha256": "5699f267392c406a39e48ae8cafb72cddea4eeb2f4625dd476f351d5807d5992",
+          "depth": 578,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "f15d10ea8c70027f02bb5257b038dd2014addee8a775dccabf51387b825e46f8",
+    "metrics": {
+      "width": 18,
+      "depth": 579,
+      "cx": 1398,
+      "u3": 1060,
+      "gates": 2458
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_rotation_stream/common_affine_report_rotation_corrected.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_rotation_stream/common_affine_report_rotation_corrected.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_rotation_stream/common_affine_report_rotation_corrected.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_rotation_stream/common_affine_report_rotation_corrected.report.json",
+        "fields": {
+          "width": 18,
+          "depth": 579,
+          "uncorrected_stream_excluding_final_affine.depth": 522,
+          "corrections.x.depth": 44,
+          "corrections.y.depth": 43,
+          "logical_inputs_checked": 4096,
+          "logical_mismatches": 0,
+          "logical_scope": "Exact flag/coordinate and mod8 phase bookkeeping up to common global phase",
+          "saved_qasm_validation.qasm_sha256": "f15d10ea8c70027f02bb5257b038dd2014addee8a775dccabf51387b825e46f8",
+          "saved_qasm_validation.depth": 579,
+          "saved_qasm_validation.width": 18,
+          "saved_qasm_validation.passed": true,
+          "saved_qasm_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_rotation_stream/common_affine_report_rotation_corrected.validation.json",
+        "fields": {
+          "qasm_sha256": "f15d10ea8c70027f02bb5257b038dd2014addee8a775dccabf51387b825e46f8",
+          "depth": 579,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "39e80574dad4011913bc05020e2cb3ae28931cae10e11c1c5ec85916ec335268",
+    "metrics": {
+      "width": 18,
+      "depth": 644,
+      "cx": 862,
+      "u3": 697,
+      "gates": 1559
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_parallel_research/common_affine_best_corrected_tket_strict.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/clean_subspace_batch/parallel644.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_parallel_research/common_affine_best_corrected_tket_strict.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/clean_subspace_batch/parallel644.json",
+        "fields": {
+          "columns": 4096,
+          "gate_counts.u3": 697,
+          "gate_counts.cx": 862,
+          "width": 18,
+          "depth": 644,
+          "data_label_mismatches": 0,
+          "max_column_l2_residual": 3.069169965635479e-14,
+          "passed": true,
+          "scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "qasm_sha256": "39e80574dad4011913bc05020e2cb3ae28931cae10e11c1c5ec85916ec335268"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_parallel_research/common_affine_best_corrected_tket_strict.validation.json",
+        "fields": {
+          "qasm_sha256": "39e80574dad4011913bc05020e2cb3ae28931cae10e11c1c5ec85916ec335268",
+          "depth": 644,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "b233c16ad1cd207f0710bc85219b6caa4a09636d9ff7973c79cef035ccc680ed",
+    "metrics": {
+      "width": 18,
+      "depth": 644,
+      "cx": 862,
+      "u3": 697,
+      "gates": 1559
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_parallel_research/common_affine_best_corrected_tket.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "508accbb9a016377d4cc5312d5117f3a0eae11f0cf22b3c59057d39686704303",
+    "metrics": {
+      "width": 18,
+      "depth": 658,
+      "cx": 862,
+      "u3": 799,
+      "gates": 1661
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_parallel_research/common_affine_best_corrected.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_parallel_research/common_affine_best_corrected.validation.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_parallel_research/construction_certificate.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_parallel_research/common_affine_best_corrected.validation.json",
+        "fields": {
+          "qasm_sha256": "508accbb9a016377d4cc5312d5117f3a0eae11f0cf22b3c59057d39686704303",
+          "depth": 658,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_parallel_research/construction_certificate.json",
+        "fields": {
+          "qasm_sha256": "508accbb9a016377d4cc5312d5117f3a0eae11f0cf22b3c59057d39686704303",
+          "inputs": 4096,
+          "passed": true,
+          "scope": "Exhaustive all-input local-operator composition proof; not separate saved-QASM basis simulation."
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "b3910b3274af7a25788a6270df58a76add8b24fe4ee0f9b20a839706fab8da27",
+    "metrics": {
+      "width": 18,
+      "depth": 659,
+      "cx": 862,
+      "u3": 799,
+      "gates": 1661
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_parallel_research/parallel_refined.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "790c7b8233bde59f2e6bb9f1e465b979ccf4f4708eab6847fbf4a0f1fef51653",
+    "metrics": {
+      "width": 18,
+      "depth": 686,
+      "cx": 717,
+      "u3": 655,
+      "gates": 1372
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_stream/common_affine_phase_min_uncorrected.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "e0095ae89628530b18d6dbf4f5e4e2cee60a287b2886e933d8a44d37e41801bc",
+    "metrics": {
+      "width": 18,
+      "depth": 686,
+      "cx": 717,
+      "u3": 657,
+      "gates": 1374
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_stream/common_affine_uncorrected.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "4a6f532ae69caabad47e2c2497ff5cf725c39bc3e932dae20bbd1bfc98f8725e",
+    "metrics": {
+      "width": 18,
+      "depth": 708,
+      "cx": 851,
+      "u3": 670,
+      "gates": 1521
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_phase_min_report_frame_corrected_tket_strict.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/clean_subspace_batch/frame708.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_phase_min_report_frame_corrected_tket_strict.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/clean_subspace_batch/frame708.json",
+        "fields": {
+          "columns": 4096,
+          "gate_counts.u3": 670,
+          "gate_counts.cx": 851,
+          "width": 18,
+          "depth": 708,
+          "data_label_mismatches": 0,
+          "max_column_l2_residual": 3.06924710296691e-14,
+          "passed": true,
+          "scope": "Exhaustive floating-point numerical test of every clean-ancilla input column; one shared global phase. Not a symbolic or interval-arithmetic proof.",
+          "qasm_sha256": "4a6f532ae69caabad47e2c2497ff5cf725c39bc3e932dae20bbd1bfc98f8725e"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_phase_min_report_frame_corrected_tket_strict.validation.json",
+        "fields": {
+          "qasm_sha256": "4a6f532ae69caabad47e2c2497ff5cf725c39bc3e932dae20bbd1bfc98f8725e",
+          "depth": 708,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "514951fb8aecfefb9f24ccd5e56db73bb1c7e5916b69f7d019576508f1c3f02c",
+    "metrics": {
+      "width": 18,
+      "depth": 708,
+      "cx": 851,
+      "u3": 670,
+      "gates": 1521
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_phase_min_report_frame_corrected_tket.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "042116e11f2a73e42184fab7b05ab7da2aed755ed4b17588bcc1014a3ffa65b4",
+    "metrics": {
+      "width": 18,
+      "depth": 709,
+      "cx": 707,
+      "u3": 716,
+      "gates": 1423
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_stream/physical_phase_min_uncorrected.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "d4dff5d854aaa8ef05887ae62344ee2b6954859d66679bf15d3d3678867f3142",
+    "metrics": {
+      "width": 18,
+      "depth": 709,
+      "cx": 707,
+      "u3": 718,
+      "gates": 1425
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_stream/physical_uncorrected.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "fc153d6c9c2d42805d283a91728196727c1895ae38ce308ce05db23e1a565537",
+    "metrics": {
+      "width": 18,
+      "depth": 717,
+      "cx": 851,
+      "u3": 752,
+      "gates": 1603
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_phase_min_report_frame_corrected.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_phase_min_report_frame_corrected.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_phase_min_report_frame_corrected.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_phase_min_report_frame_corrected.report.json",
+        "fields": {
+          "width": 18,
+          "depth": 717,
+          "correction_blocks.x.depth": 46,
+          "correction_blocks.y.depth": 42,
+          "logical_inputs_checked": 4096,
+          "logical_mismatches": 0,
+          "saved_qasm_validation.qasm_sha256": "fc153d6c9c2d42805d283a91728196727c1895ae38ce308ce05db23e1a565537",
+          "saved_qasm_validation.depth": 717,
+          "saved_qasm_validation.width": 18,
+          "saved_qasm_validation.passed": true,
+          "saved_qasm_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_phase_min_report_frame_corrected.validation.json",
+        "fields": {
+          "qasm_sha256": "fc153d6c9c2d42805d283a91728196727c1895ae38ce308ce05db23e1a565537",
+          "depth": 717,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "26254c7775f28793464cf5950fef9e7607459180f7b337caecb4b4850391d689",
+    "metrics": {
+      "width": 18,
+      "depth": 721,
+      "cx": 857,
+      "u3": 669,
+      "gates": 1526
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_phase_min_report_rails_corrected_tket.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "b19e4b8b4f0c38c0a1176db9da1bdfbfefd436759a253fe361ce5abec187b05f",
+    "metrics": {
+      "width": 18,
+      "depth": 721,
+      "cx": 857,
+      "u3": 669,
+      "gates": 1526
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_phase_min_report_rails_corrected_tket_strict.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_phase_min_report_rails_corrected_tket_strict.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": false,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_phase_min_report_rails_corrected_tket_strict.validation.json",
+        "fields": {
+          "qasm_sha256": "b19e4b8b4f0c38c0a1176db9da1bdfbfefd436759a253fe361ce5abec187b05f",
+          "depth": 721,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "d0810aee12cf84bfae07faa936c5b0bd9614772eb25e9db3e8f0e4eb08547f70",
+    "metrics": {
+      "width": 18,
+      "depth": 722,
+      "cx": 865,
+      "u3": 772,
+      "gates": 1637
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_report_frame_corrected.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_report_frame_corrected.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_report_frame_corrected.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_report_frame_corrected.report.json",
+        "fields": {
+          "width": 18,
+          "depth": 722,
+          "correction_blocks.x.depth": 45,
+          "correction_blocks.y.depth": 46,
+          "logical_inputs_checked": 4096,
+          "logical_mismatches": 0,
+          "saved_qasm_validation.qasm_sha256": "d0810aee12cf84bfae07faa936c5b0bd9614772eb25e9db3e8f0e4eb08547f70",
+          "saved_qasm_validation.depth": 722,
+          "saved_qasm_validation.width": 18,
+          "saved_qasm_validation.passed": true,
+          "saved_qasm_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_report_frame_corrected.validation.json",
+        "fields": {
+          "qasm_sha256": "d0810aee12cf84bfae07faa936c5b0bd9614772eb25e9db3e8f0e4eb08547f70",
+          "depth": 722,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "a069e51504cde6061bc466c8ead7fe5ddee5899f1da0d231c8fd4efd18f1851b",
+    "metrics": {
+      "width": 18,
+      "depth": 726,
+      "cx": 1109,
+      "u3": 770,
+      "gates": 1879
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/relative_lut_hybrid/hybrid_peephole_intermediate.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "af77261a95679c96c14cd6957280d9979d814bb4f7db9d34881c4fc1b344c824",
+    "metrics": {
+      "width": 18,
+      "depth": 726,
+      "cx": 1109,
+      "u3": 770,
+      "gates": 1879
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_relative_lut_candidate/logo_oracle.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/relative_lut_hybrid/hybrid_clifford.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/relative_lut_hybrid/hybrid_peephole.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_relative_lut_candidate/logo_oracle.validation.json",
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_relative_lut_candidate/manifest.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/relative_lut_hybrid/hybrid_clifford.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_relative_lut_candidate/logo_oracle.validation.json",
+        "fields": {
+          "qasm_sha256": "af77261a95679c96c14cd6957280d9979d814bb4f7db9d34881c4fc1b344c824",
+          "depth": 726,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_relative_lut_candidate/manifest.json",
+        "fields": {
+          "width": 18,
+          "depth": 726,
+          "qasm_sha256": "af77261a95679c96c14cd6957280d9979d814bb4f7db9d34881c4fc1b344c824",
+          "scope": "Oracle body only; QMOD main has 12 input-preparation H gates.",
+          "numerical_validation_passed": true,
+          "verification_scope": "Three random full-support states on both source and exported QASM; exhaustive construction proof remains separately required."
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/relative_lut_hybrid/hybrid_clifford.validation.json",
+        "fields": {
+          "qasm_sha256": "af77261a95679c96c14cd6957280d9979d814bb4f7db9d34881c4fc1b344c824",
+          "depth": 726,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "ff83cba1d74d787622c7ea7052fe37fb7c48e976df90c570c7b1f94a5d6edbb6",
+    "metrics": {
+      "width": 18,
+      "depth": 727,
+      "cx": 1111,
+      "u3": 772,
+      "gates": 1883
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/relative_lut_hybrid/hybrid_clifford_intermediate.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "46f00d00f0d6c76ea2e18736db3c27040f36bd19c79ca36dd4464307af944597",
+    "metrics": {
+      "width": 18,
+      "depth": 730,
+      "cx": 857,
+      "u3": 753,
+      "gates": 1610
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_phase_min_report_rails_corrected.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_phase_min_report_rails_corrected.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_phase_min_report_rails_corrected.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": false,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_phase_min_report_rails_corrected.report.json",
+        "fields": {
+          "width": 18,
+          "depth": 730,
+          "correction_blocks.x.depth": 45,
+          "correction_blocks.y.depth": 42,
+          "saved_qasm_validation.qasm_sha256": "46f00d00f0d6c76ea2e18736db3c27040f36bd19c79ca36dd4464307af944597",
+          "saved_qasm_validation.depth": 730,
+          "saved_qasm_validation.width": 18,
+          "saved_qasm_validation.passed": true,
+          "saved_qasm_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_phase_min_report_rails_corrected.validation.json",
+        "fields": {
+          "qasm_sha256": "46f00d00f0d6c76ea2e18736db3c27040f36bd19c79ca36dd4464307af944597",
+          "depth": 730,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "51380c5d6aa2ae2b9d486ce55751b3a115d5ab697ec82a6182ca69743387e8fd",
+    "metrics": {
+      "width": 18,
+      "depth": 730,
+      "cx": 867,
+      "u3": 770,
+      "gates": 1637
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_report_rails_corrected.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_report_rails_corrected.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_report_rails_corrected.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": false,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_report_rails_corrected.report.json",
+        "fields": {
+          "width": 18,
+          "depth": 730,
+          "correction_blocks.x.depth": 46,
+          "correction_blocks.y.depth": 46,
+          "saved_qasm_validation.qasm_sha256": "51380c5d6aa2ae2b9d486ce55751b3a115d5ab697ec82a6182ca69743387e8fd",
+          "saved_qasm_validation.depth": 730,
+          "saved_qasm_validation.width": 18,
+          "saved_qasm_validation.passed": true,
+          "saved_qasm_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_report_rails_corrected.validation.json",
+        "fields": {
+          "qasm_sha256": "51380c5d6aa2ae2b9d486ce55751b3a115d5ab697ec82a6182ca69743387e8fd",
+          "depth": 730,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "7ad3d96b65a119348fd04626677a7cc9d6905264af9ab0ccde01071ca5ca5382",
+    "metrics": {
+      "width": 18,
+      "depth": 731,
+      "cx": 1111,
+      "u3": 833,
+      "gates": 1944
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/relative_lut_hybrid/hybrid_best.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "f34671b087785301684fb4f46b9a5a39ff05e272d337d0bf133a8b4b274107a7",
+    "metrics": {
+      "width": 18,
+      "depth": 743,
+      "cx": 850,
+      "u3": 757,
+      "gates": 1607
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_phase_min_report_frame_endpoint_corrected.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_phase_min_report_frame_endpoint_corrected.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_phase_min_report_frame_endpoint_corrected.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_phase_min_report_frame_endpoint_corrected.report.json",
+        "fields": {
+          "width": 18,
+          "depth": 743,
+          "correction_blocks.x.depth": 46,
+          "correction_blocks.y.depth": 42,
+          "logical_inputs_checked": 4096,
+          "logical_mismatches": 0,
+          "saved_qasm_validation.qasm_sha256": "f34671b087785301684fb4f46b9a5a39ff05e272d337d0bf133a8b4b274107a7",
+          "saved_qasm_validation.depth": 743,
+          "saved_qasm_validation.width": 18,
+          "saved_qasm_validation.passed": true,
+          "saved_qasm_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_phase_min_report_frame_endpoint_corrected.validation.json",
+        "fields": {
+          "qasm_sha256": "f34671b087785301684fb4f46b9a5a39ff05e272d337d0bf133a8b4b274107a7",
+          "depth": 743,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "709d1aee7a8a35aed450adaeacc79c053c669f28286a77a7742ad377bffcbd90",
+    "metrics": {
+      "width": 18,
+      "depth": 744,
+      "cx": 865,
+      "u3": 775,
+      "gates": 1640
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_report_frame_endpoint_corrected.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_report_frame_endpoint_corrected.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_report_frame_endpoint_corrected.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_report_frame_endpoint_corrected.report.json",
+        "fields": {
+          "width": 18,
+          "depth": 744,
+          "correction_blocks.x.depth": 45,
+          "correction_blocks.y.depth": 46,
+          "logical_inputs_checked": 4096,
+          "logical_mismatches": 0,
+          "saved_qasm_validation.qasm_sha256": "709d1aee7a8a35aed450adaeacc79c053c669f28286a77a7742ad377bffcbd90",
+          "saved_qasm_validation.depth": 744,
+          "saved_qasm_validation.width": 18,
+          "saved_qasm_validation.passed": true,
+          "saved_qasm_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_frame/common_affine_report_frame_endpoint_corrected.validation.json",
+        "fields": {
+          "qasm_sha256": "709d1aee7a8a35aed450adaeacc79c053c669f28286a77a7742ad377bffcbd90",
+          "depth": 744,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "a0ac895bf2d3b4cdd256a4df75cc281db397ecddac7c23f420e2005435910bac",
+    "metrics": {
+      "width": 18,
+      "depth": 746,
+      "cx": 1168,
+      "u3": 846,
+      "gates": 2014
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_candidate/logo_oracle.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_candidate/manifest.json"
+    ],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/artifacts/independent_candidate/manifest.json",
+        "fields": {
+          "width": 18,
+          "depth": 746,
+          "qasm_sha256": "a0ac895bf2d3b4cdd256a4df75cc281db397ecddac7c23f420e2005435910bac",
+          "scope": "Oracle body only; QMOD main has 12 input-preparation H gates."
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "a344d60dfc0ff8012cb5dc38064bde8611e11bdc5d5c8c54d260b33b2972709d",
+    "metrics": {
+      "width": 18,
+      "depth": 746,
+      "cx": 1168,
+      "u3": 846,
+      "gates": 2014
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/hybrid_phase/hybrid_phase_tket_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "b9bd3a22c3b89bda8ee859e47f6fb5982d9e7a93710375ba4ab3de30a19beb48",
+    "metrics": {
+      "width": 18,
+      "depth": 746,
+      "cx": 1170,
+      "u3": 848,
+      "gates": 2018
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/hybrid_phase/hybrid_phase_tket.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "195e0ce27841a9810b4419e9ecdea7b69b9e8cf12d831bca019b3399c0527a0d",
+    "metrics": {
+      "width": 18,
+      "depth": 750,
+      "cx": 1178,
+      "u3": 942,
+      "gates": 2120
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/hybrid_phase/hybrid_phase.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "6eb30353aa7962323ee8733cd03e0e3e5d981bafa7889ce50eabf3a08994459e",
+    "metrics": {
+      "width": 18,
+      "depth": 752,
+      "cx": 1091,
+      "u3": 756,
+      "gates": 1847
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/research_phase_duality/relative_lut_rank_tket_strict.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/3_FullPeepholeOptimise_qiskit0.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/3_FullPeepholeOptimise_qiskit3.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/4_RemoveRedundancies2_qiskit0.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/4_RemoveRedundancies2_qiskit3.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/research_phase_duality/relative_lut_rank_tket_strict.validation.json"
+    ],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/research_phase_duality/relative_lut_rank_tket_strict.validation.json",
+        "fields": {
+          "qasm_sha256": "6eb30353aa7962323ee8733cd03e0e3e5d981bafa7889ce50eabf3a08994459e",
+          "depth": 752,
+          "width": 18,
+          "passed": false,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "d4e87b1bca3cdd0fa8e28152d3210095aa996288de82d05663971f1cdc81d782",
+    "metrics": {
+      "width": 18,
+      "depth": 752,
+      "cx": 1091,
+      "u3": 756,
+      "gates": 1847
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/3_FullPeepholeOptimise.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/4_RemoveRedundancies2.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "0f18bbf1c46c02298fa8acd3678cbf8e6f25aaf2af27940be60ed0793f067da7",
+    "metrics": {
+      "width": 18,
+      "depth": 752,
+      "cx": 1094,
+      "u3": 757,
+      "gates": 1851
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/2_CliffordSimp.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "59aedbf7fb9b0db7746db888d8a36c0ca8be3ed4e3feaae59b1a4216248878e8",
+    "metrics": {
+      "width": 18,
+      "depth": 752,
+      "cx": 1094,
+      "u3": 756,
+      "gates": 1850
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/relative_lut_rank_materialized_strict.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/shared_optimizer_fixed.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/shared_optimizer_fixed.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": false,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/shared_optimizer_fixed.validation.json",
+        "fields": {
+          "qasm_sha256": "59aedbf7fb9b0db7746db888d8a36c0ca8be3ed4e3feaae59b1a4216248878e8",
+          "depth": 752,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "992d56f3fc4adc6ddeaee36eb0946ba7dc6c14490e82697f3ebeeac98a3f3efe",
+    "metrics": {
+      "width": 18,
+      "depth": 752,
+      "cx": 1094,
+      "u3": 757,
+      "gates": 1851
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/2_CliffordSimp_qiskit0.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/2_CliffordSimp_qiskit3.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "11e2981e93038dc70021ae1e0309a670c8322d5806df13e392ed8a790ad40b0c",
+    "metrics": {
+      "width": 18,
+      "depth": 760,
+      "cx": 1154,
+      "u3": 823,
+      "gates": 1977
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/alternative/rowclass_affine_basis_oracle_tket_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "71c05b9af7c14b7e74213637526b962426fd06a23921b841838b07baff743dbf",
+    "metrics": {
+      "width": 18,
+      "depth": 760,
+      "cx": 1156,
+      "u3": 825,
+      "gates": 1981
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/alternative/rowclass_affine_basis_oracle_tket.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "26455925de3ced3e903a62356f212e153624e4c36e66dbccf9a036084f96af8f",
+    "metrics": {
+      "width": 18,
+      "depth": 762,
+      "cx": 1094,
+      "u3": 833,
+      "gates": 1927
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/0_import_qiskit0.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/0_import_qiskit3.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/1_RemoveRedundancies1_qiskit0.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/1_RemoveRedundancies1_qiskit3.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "3081bd21e6379081adda80d59e52df2f534a1f17666b80e6e97215eecbbbe391",
+    "metrics": {
+      "width": 18,
+      "depth": 762,
+      "cx": 1094,
+      "u3": 833,
+      "gates": 1927
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/0_import.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tket_correctness_audit/1_RemoveRedundancies1.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "521a457edae355dc0e785de4be41456105151fe786d2954cecfa1105ec0fd5ab",
+    "metrics": {
+      "width": 18,
+      "depth": 762,
+      "cx": 1094,
+      "u3": 833,
+      "gates": 1927
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/research_phase_duality/relative_lut_rank.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "d178b36bfae19474ffa7af465be037cce7d1d0f2858b2b80208b6e7348ef2182",
+    "metrics": {
+      "width": 18,
+      "depth": 766,
+      "cx": 1164,
+      "u3": 900,
+      "gates": 2064
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/alternative/rowclass_affine_basis_oracle.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "ada74c0c4e8cd1a01dcbdae3d1ff3613fe6181d6c9445ab14cb1cba62ad012ca",
+    "metrics": {
+      "width": 18,
+      "depth": 794,
+      "cx": 839,
+      "u3": 775,
+      "gates": 1614
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_report_corrected.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_report_corrected.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_report_corrected.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": false,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_report_corrected.report.json",
+        "fields": {
+          "width": 18,
+          "depth": 794,
+          "correction_blocks.x.depth": 115,
+          "correction_blocks.y.depth": 111,
+          "saved_qasm_validation.qasm_sha256": "ada74c0c4e8cd1a01dcbdae3d1ff3613fe6181d6c9445ab14cb1cba62ad012ca",
+          "saved_qasm_validation.depth": 794,
+          "saved_qasm_validation.width": 18,
+          "saved_qasm_validation.passed": true,
+          "saved_qasm_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/common_affine_report_corrected.validation.json",
+        "fields": {
+          "qasm_sha256": "ada74c0c4e8cd1a01dcbdae3d1ff3613fe6181d6c9445ab14cb1cba62ad012ca",
+          "depth": 794,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "a2ae3ce7b8a008ff04629e2b5fc9634d3ee4a2503eae808abd298adbbfbca186",
+    "metrics": {
+      "width": 18,
+      "depth": 820,
+      "cx": 825,
+      "u3": 833,
+      "gates": 1658
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/physical_report_corrected.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/physical_report_corrected.report.json",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/physical_report_corrected.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": false,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/physical_report_corrected.report.json",
+        "fields": {
+          "width": 18,
+          "depth": 820,
+          "correction_blocks.x.depth": 105,
+          "correction_blocks.y.depth": 113,
+          "saved_qasm_validation.qasm_sha256": "a2ae3ce7b8a008ff04629e2b5fc9634d3ee4a2503eae808abd298adbbfbca186",
+          "saved_qasm_validation.depth": 820,
+          "saved_qasm_validation.width": 18,
+          "saved_qasm_validation.passed": true,
+          "saved_qasm_validation.scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      },
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/closed_phase_correction/physical_report_corrected.validation.json",
+        "fields": {
+          "qasm_sha256": "a2ae3ce7b8a008ff04629e2b5fc9634d3ee4a2503eae808abd298adbbfbca186",
+          "depth": 820,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "4a3d814bc70b6ad44347838dcaa41b3ef833600e1931942779c57c7458d1421d",
+    "metrics": {
+      "width": 18,
+      "depth": 1439,
+      "cx": 995,
+      "u3": 991,
+      "gates": 1986
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/rank_circuit/rank_direct_phase_candidate.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "a0eff0ca381d15c23e34630dcc9edf958257550ae15438aafb0b97a34e4e0771",
+    "metrics": {
+      "width": 18,
+      "depth": 1491,
+      "cx": 1042,
+      "u3": 1016,
+      "gates": 2058
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/rank_circuit/rank_trie_candidate.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "b96cc92b2314eaa23ffe5fadbbaa115e47e6182d9e7be0d6006c060033d58cc5",
+    "metrics": {
+      "width": 18,
+      "depth": 1797,
+      "cx": 2279,
+      "u3": 2413,
+      "gates": 4692
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_modern/balanced_phase_reference.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "6590e4e1b358854a4f5d1a1c502d32e741e9f67da885e39547718690ece8325b",
+    "metrics": {
+      "width": 18,
+      "depth": 1895,
+      "cx": 2017,
+      "u3": 2294,
+      "gates": 4311
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/affine_coset_classifier/compressed_oracle.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "a7b5ba33911bd3074583a713421d9b6f1d13dc843a60eb7375d31b5a0ae5112d",
+    "metrics": {
+      "width": 18,
+      "depth": 2055,
+      "cx": 1346,
+      "u3": 1582,
+      "gates": 2928
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/rank_circuit/geometry_prefix_full.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "1ce6e7cbf6b484d16b4c02d6aded7b86c11d80e1399aedfc1ece1f71bf52c274",
+    "metrics": {
+      "width": 18,
+      "depth": 2093,
+      "cx": 2622,
+      "u3": 2805,
+      "gates": 5427
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_interval_native/interval_phase.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "8fe5ecd47cb9c372df8a11c30427947571b14cc35d242b63affe22f466729607",
+    "metrics": {
+      "width": 18,
+      "depth": 2136,
+      "cx": 2219,
+      "u3": 1219,
+      "gates": 3438
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tweedledum_xag/geometry_xag_best_seed137_o3.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "96708143b2bb9b554d65ef01796429f13fca8a6fc8a06b11ccb247d03d44b65c",
+    "metrics": {
+      "width": 18,
+      "depth": 2142,
+      "cx": 2213,
+      "u3": 1217,
+      "gates": 3430
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tweedledum_xag/geometry_xag_best_seed1_o3.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tweedledum_xag/geometry_xag_best_seed42_o3.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "140085a8fc9eb7eba87323a368f5a04fba5acd51468092e5765cc3f84144dfc8",
+    "metrics": {
+      "width": 18,
+      "depth": 2160,
+      "cx": 1346,
+      "u3": 1391,
+      "gates": 2737
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/geometry_phase_dp/shared_trie7_tket_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "4bbc05fcbe319f559927fea68a2f648ec58b58659f90796e99e251481486c13d",
+    "metrics": {
+      "width": 18,
+      "depth": 2160,
+      "cx": 1346,
+      "u3": 1394,
+      "gates": 2740
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/geometry_phase_dp/shared_trie7_tket_phase_safe_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "b7100ae09baa5f88a433631d123df06d6e00beb9e6c3b6ae3a4dff48ddb8798d",
+    "metrics": {
+      "width": 18,
+      "depth": 2160,
+      "cx": 1346,
+      "u3": 1391,
+      "gates": 2737
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/geometry_phase_dp/shared_trie7_strict_tket.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "cf74aa3e9418483b57ae1cb404df9665f8b40b20d0af69c5f9713e0e159e4f9c",
+    "metrics": {
+      "width": 18,
+      "depth": 2160,
+      "cx": 1346,
+      "u3": 1394,
+      "gates": 2740
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/geometry_phase_dp/shared_trie7_tket_calibrated_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "419b8eb7065a40c7d1a465febd93643079d142bb1ff31f00bc55dbbd9cc216a4",
+    "metrics": {
+      "width": 18,
+      "depth": 2172,
+      "cx": 1451,
+      "u3": 1366,
+      "gates": 2817
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/rank_circuit/rank_direct_phase_identity_candidate.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "7c5d2bc8dcebe7b86268531cdcf3c7ffe8d477cbc457c3f4285d2bd305faba67",
+    "metrics": {
+      "width": 18,
+      "depth": 2176,
+      "cx": 1349,
+      "u3": 1512,
+      "gates": 2861
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/geometry_phase_dp/shared_trie7_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "3b5a1fd643501af2fabb049636e00e15bd1d1c81317c49f4f89e080a5e8a5ebf",
+    "metrics": {
+      "width": 18,
+      "depth": 2216,
+      "cx": 2227,
+      "u3": 1216,
+      "gates": 3443
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tweedledum_xag/geometry_xag_greedy_seed137_o3.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "b2ddc522c5ccabab91a8691ff2dce8616f08829fa4773089d7d73c58f80ce464",
+    "metrics": {
+      "width": 18,
+      "depth": 2306,
+      "cx": 2195,
+      "u3": 1235,
+      "gates": 3430
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tweedledum_xag/geometry_xag_allx_seed137_o3.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "fd90bccb448d042fd947cbe685f68281804c5c6241351f2ac55b141a3fa14aa9",
+    "metrics": {
+      "width": 18,
+      "depth": 2342,
+      "cx": 2248,
+      "u3": 1225,
+      "gates": 3473
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tweedledum_xag/geometry_xag_ally_seed137_o3.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "618a2c7c3a50e442be302333763990a37463ffd78472b686d245b4b38394e32d",
+    "metrics": {
+      "width": 18,
+      "depth": 2380,
+      "cx": 2541,
+      "u3": 2790,
+      "gates": 5331
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/folded_geometry/folded_oracle_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "3ea945875b8669d548b4a29843b26f273cbb53a9ac87a12bba7124dd55c59f9d",
+    "metrics": {
+      "width": 18,
+      "depth": 2552,
+      "cx": 2383,
+      "u3": 2053,
+      "gates": 4436
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tweedledum_xag/geometry_xag_greedy_seed137_o0.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "89860fe3f376d442bad429c009dea70ff03d495929a603aa0d3aec87db7ef8f6",
+    "metrics": {
+      "width": 18,
+      "depth": 2593,
+      "cx": 1686,
+      "u3": 1844,
+      "gates": 3530
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/geometry_phase_dp/shared_trie_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "4fef4e4138ccead6cf2188a329de514c3d7aa10d971ecf9f8205b84edd51be06",
+    "metrics": {
+      "width": 18,
+      "depth": 2642,
+      "cx": 3243,
+      "u3": 1175,
+      "gates": 4418
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/alternative/rowclass_affine_basis_oracle_pyzx.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "d74a1147a692a4bb2c111f228849a9914bb3ea9cbc5a75a3294bc954bedd9d1c",
+    "metrics": {
+      "width": 18,
+      "depth": 2790,
+      "cx": 2211,
+      "u3": 2395,
+      "gates": 4606
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/relative_phase_resynthesis/mixed_phase_peeling.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "179c3ef0c4a3e22b434f9eb0fbf16bd5811109fb54017bafadc25b0a4840034f",
+    "metrics": {
+      "width": 18,
+      "depth": 2859,
+      "cx": 1571,
+      "u3": 1746,
+      "gates": 3317
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/natural_stream/stream_x_cx.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/natural_stream/stream_x_depth.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "e29ca646ce3e5a83a2fedf41f1d8867c0f9d2b5f52eabdd75d9941a60f0c4bb7",
+    "metrics": {
+      "width": 18,
+      "depth": 2919,
+      "cx": 1739,
+      "u3": 1890,
+      "gates": 3629
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/inplace_lut_schedule/network_k6_complement_default_observable_support_internal_depth_55771b_phase.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/inplace_lut_schedule/network_k6_complement_default_observable_support_internal_depth_55771b_phase.validation.json"
+    ],
+    "has_passed_true": true,
+    "claims_4096": false,
+    "claims_exhaustive": true,
+    "claims_randomized": true,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/inplace_lut_schedule/network_k6_complement_default_observable_support_internal_depth_55771b_phase.validation.json",
+        "fields": {
+          "qasm_sha256": "e29ca646ce3e5a83a2fedf41f1d8867c0f9d2b5f52eabdd75d9941a60f0c4bb7",
+          "depth": 2919,
+          "width": 18,
+          "passed": true,
+          "scope": "Randomized saved-QASM validation; not an exhaustive unitary proof"
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "a44c64a0319eb97e818224ebf42037c9275e6ad39f19b7319dbb61f5f928e2d5",
+    "metrics": {
+      "width": 18,
+      "depth": 2937,
+      "cx": 2007,
+      "u3": 2306,
+      "gates": 4313
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/alternative/rank_batch_oracle.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "7dcc049ff2cf2480f0b510865e1edd139a0a5800a5de18bdcb93775a0cde8b68",
+    "metrics": {
+      "width": 18,
+      "depth": 2959,
+      "cx": 3152,
+      "u3": 1020,
+      "gates": 4172
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/multitrack_tour_search/best_pyzx.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "4316f243e6f7235629bc3ff6de46329277078387346b2c52d741657d032816e6",
+    "metrics": {
+      "width": 18,
+      "depth": 3049,
+      "cx": 1807,
+      "u3": 1963,
+      "gates": 3770
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/inplace_lut_schedule/network_k6_complement_default_observable_support_internal_depth_55771b_output.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "e80cfce65f986d564c75b4f112aa35d984f9219b84e841ce540004c04ae6dbd3",
+    "metrics": {
+      "width": 18,
+      "depth": 3052,
+      "cx": 1887,
+      "u3": 2038,
+      "gates": 3925
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/inplace_lut_schedule/network_k6_complement_default_observable_support_internal_moves_55771b_phase.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "012497b8b6ab600345d21d7ad853f3aad405cf1c789a212f9a5ae22744955ade",
+    "metrics": {
+      "width": 18,
+      "depth": 3072,
+      "cx": 2656,
+      "u3": 1174,
+      "gates": 3830
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/geometry_phase_dp/shared_trie7_pyzx.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "d80f10c8196001aea1ae902a62eae491a41ef8ccd78b747639c59b2f86bb118e",
+    "metrics": {
+      "width": 18,
+      "depth": 3157,
+      "cx": 1951,
+      "u3": 2106,
+      "gates": 4057
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/inplace_lut_schedule/network_k6_complement_default_observable_support_internal_moves_55771b_output.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "64aa0b51b0932a3590e488d754026991d8a019a9cb57948509789869cb63cfb8",
+    "metrics": {
+      "width": 18,
+      "depth": 3204,
+      "cx": 1764,
+      "u3": 1960,
+      "gates": 3724
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/natural_stream/stream_y_cx.qasm",
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/natural_stream/stream_y_depth.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "17319df67615bc25dffb3e5283c63f35b8c07897eb86f80de54d926556cdadb0",
+    "metrics": {
+      "width": 18,
+      "depth": 3245,
+      "cx": 2936,
+      "u3": 1306,
+      "gates": 4242
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/alternative/sat_feature_oracle.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "7e17089f8cfd77d688cc58dff905674b90af73586eae21b316bf8b8c30e3f0b6",
+    "metrics": {
+      "width": 18,
+      "depth": 3250,
+      "cx": 1967,
+      "u3": 2163,
+      "gates": 4130
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/lut_pebble_search/network_k6_complement_default_observable_support_rootphase.qasm"
+    ],
+    "metadata_files": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/lut_pebble_search/best_construction_certificate.json"
+    ],
+    "has_passed_true": false,
+    "claims_4096": true,
+    "claims_exhaustive": true,
+    "claims_randomized": false,
+    "claims": [
+      {
+        "path": "research/external_classiq_oracle_1609/source_snapshot/tracks/lut_pebble_search/best_construction_certificate.json",
+        "fields": {
+          "qasm_sha256": "7e17089f8cfd77d688cc58dff905674b90af73586eae21b316bf8b8c30e3f0b6",
+          "basis_inputs": 4096,
+          "marked_inputs": 1097,
+          "network_truth_mismatches": 0,
+          "depth": 3250,
+          "scope": "Exhaustive logical/symbolic construction check, not 4096 individual saved-QASM numerical simulations."
+        }
+      }
+    ]
+  },
+  {
+    "sha256": "e93a62d07e11976743d024b3880b8937ba80685f71b902235e065831a088d6a7",
+    "metrics": {
+      "width": 18,
+      "depth": 3333,
+      "cx": 2792,
+      "u3": 3275,
+      "gates": 6067
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/research_depth_oracles/prefix_borrowed_best.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "cc7af689d17ec81283a52ea0ac728aed457327c196a1f63e37fce599d6c2e032",
+    "metrics": {
+      "width": 18,
+      "depth": 3354,
+      "cx": 1927,
+      "u3": 2104,
+      "gates": 4031
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/lut_pebble_search/network_k6_complement_default_observable_support_depth_rootphase.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "8879f48b133e53f026b9840467a07971fb86a1b97de8fecab364ec94f5b1f9a5",
+    "metrics": {
+      "width": 18,
+      "depth": 3354,
+      "cx": 2031,
+      "u3": 2231,
+      "gates": 4262
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/lut_pebble_search/network_k6_complement_default_observable_support_output.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "33322611b0964d0125d0ce4f8f3b044940ad5527cbf29a533c11da5bd14fe9bb",
+    "metrics": {
+      "width": 18,
+      "depth": 3458,
+      "cx": 1991,
+      "u3": 2171,
+      "gates": 4162
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/lut_pebble_search/network_k6_complement_default_observable_support_depth_output.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "5e461b16aa5ceb33157963c4bd2e5feeaa4798e60ddf86aa3179ce61c03a7ef1",
+    "metrics": {
+      "width": 18,
+      "depth": 3521,
+      "cx": 3343,
+      "u3": 1843,
+      "gates": 5186
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/rank_circuit/rank_direct_phase_candidate_pyzx.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "6ab2764682473b4e0a12f09600823fdd001908653920715836a4558f2082f873",
+    "metrics": {
+      "width": 18,
+      "depth": 3899,
+      "cx": 1754,
+      "u3": 3566,
+      "gates": 5320
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/natural_stream/stream_x_depth_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "5abee7a57bc44b7cc5e608a9f71d7318a61d38964b6fd27c5655a928014dc98d",
+    "metrics": {
+      "width": 18,
+      "depth": 4207,
+      "cx": 2185,
+      "u3": 2106,
+      "gates": 4291
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/geometry_phase_dp/geometry_phase_cover_tket.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "fa01512cd060cd13b8b71850fd4b2433bae74bdc3c7f06cb4b40af54de00d100",
+    "metrics": {
+      "width": 18,
+      "depth": 4207,
+      "cx": 2185,
+      "u3": 2106,
+      "gates": 4291
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/geometry_phase_dp/geometry_phase_cover_tket_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "477f7d5f3aec512dc36c2d7dca4f6d24f120a59d12d666d5fc2452601827c592",
+    "metrics": {
+      "width": 18,
+      "depth": 4211,
+      "cx": 2185,
+      "u3": 2304,
+      "gates": 4489
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/geometry_phase_dp/geometry_phase_cover_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "886910cafecf2d71dc24bdef6f0fb320a1ee7a328aa69505df66e0740fad4211",
+    "metrics": {
+      "width": 18,
+      "depth": 4309,
+      "cx": 2491,
+      "u3": 2788,
+      "gates": 5279
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/lut_pebble_search/network_k6_direct_default_observable_support_rootphase.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "a65172465762a1b02628644102547cfd4a97ab632c9e5783d1d66c11a32f7310",
+    "metrics": {
+      "width": 18,
+      "depth": 4343,
+      "cx": 2515,
+      "u3": 2807,
+      "gates": 5322
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/lut_pebble_search/network_k6_direct_default_observable_support_output.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "31c4353fc2e37bd955ef3af03842e52f7cabaeeeb87a2207dd277156983cd18d",
+    "metrics": {
+      "width": 18,
+      "depth": 4358,
+      "cx": 2347,
+      "u3": 2551,
+      "gates": 4898
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tweedledum_xag/rank_phase_seed137_o3.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "e229f95efa7fc25583a2b06d066b3ff9f5df49edc6224ef56da53ef63460813b",
+    "metrics": {
+      "width": 18,
+      "depth": 5329,
+      "cx": 3502,
+      "u3": 4373,
+      "gates": 7875
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/classiq_baseline/artifacts/baseline.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "a45b097481f2eafeebe9594bfae41fb398ed7c31a2866638afd1c2e09cfe8a53",
+    "metrics": {
+      "width": 18,
+      "depth": 5963,
+      "cx": 4284,
+      "u3": 4638,
+      "gates": 8922
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_rewrite/best_modern_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "b7041de709399b16b77aa53f13684c3bb00dba4125076b530c1403f508f992c5",
+    "metrics": {
+      "width": 18,
+      "depth": 6019,
+      "cx": 3377,
+      "u3": 3772,
+      "gates": 7149
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/lut_pebble_search/network_k6_direct_plain_moves_output.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "bd12885b2c16282c634271456db1f8c4e3faf83d1e8dad5208cf2f65c568bbbd",
+    "metrics": {
+      "width": 18,
+      "depth": 6027,
+      "cx": 3371,
+      "u3": 3772,
+      "gates": 7143
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/lut_pebble_search/network_k6_direct_plain_moves_rootphase.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "de53f061079a8da7d45f488ab940417c6837769aa6c8f936f7c619597d8e442d",
+    "metrics": {
+      "width": 18,
+      "depth": 6132,
+      "cx": 2668,
+      "u3": 4976,
+      "gates": 7644
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tweedledum_xag/rank_phase_seed137_o0.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "0f2aa2047cf9eb780e661132bb992bd8effb968b8cf2df41252e47e853962c93",
+    "metrics": {
+      "width": 18,
+      "depth": 6448,
+      "cx": 5476,
+      "u3": 4077,
+      "gates": 9553
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/caterpillar/sat_feature_pebbled_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "74c6d1893001ebdeb998314656033b0fa0640a9dc1b26519ecb114a35b9956c0",
+    "metrics": {
+      "width": 18,
+      "depth": 6970,
+      "cx": 3901,
+      "u3": 4329,
+      "gates": 8230
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/lut_pebble_search/network_k6_complement_plain_moves_rootphase.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "5037f27b0bbd9484580e49f84cde9fa69e5fab878c58bdba1e0e96d564da351a",
+    "metrics": {
+      "width": 18,
+      "depth": 6971,
+      "cx": 3921,
+      "u3": 4351,
+      "gates": 8272
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/lut_pebble_search/network_k6_complement_plain_moves_output.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "261f321daf89906ba6c2ce49c7ead73f21bba4cf2211283c7bab70b6d866cc8b",
+    "metrics": {
+      "width": 18,
+      "depth": 7619,
+      "cx": 4152,
+      "u3": 4661,
+      "gates": 8813
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_esop_opt/exorcism_affine_search_hybrid_s11.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "ee50c74ece4ee3216ab5d9a4c741f271e0109577103b7096ea3d2b4438523ab8",
+    "metrics": {
+      "width": 18,
+      "depth": 8855,
+      "cx": 4890,
+      "u3": 5516,
+      "gates": 10406
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_esop_opt/exorcism_hybrid_s11.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "770c29aabc096836d91ff9e4625dd38851b26062723359377cd35ac8450c9211",
+    "metrics": {
+      "width": 18,
+      "depth": 9636,
+      "cx": 5348,
+      "u3": 6033,
+      "gates": 11381
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_esop_opt/exorcism_dirty_hybrid_s11.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "9bcc99783cd391b0f97f96914047b3b0b1de991b487a53d5687f8a4e64c104e5",
+    "metrics": {
+      "width": 18,
+      "depth": 10006,
+      "cx": 5720,
+      "u3": 7216,
+      "gates": 12936
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/classiq_rank_synth/artifacts/stream_x.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "316679f2e49b8d800b285c67aa4080e20203fd0205f886439b8ccf8eb07b1c0f",
+    "metrics": {
+      "width": 18,
+      "depth": 11505,
+      "cx": 6096,
+      "u3": 6431,
+      "gates": 12527
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_rewrite/best_degree6_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "1598dfdf7405c03fb2d562fb0f68751639b605d8b063290b8882b5862a9cbc6f",
+    "metrics": {
+      "width": 18,
+      "depth": 11564,
+      "cx": 6156,
+      "u3": 6523,
+      "gates": 12679
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_rewrite/best_degree5_strict.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "14eb78db6abfd9be50e93ac9ba3cc0bf4551c745591205f9603485a5479f7573",
+    "metrics": {
+      "width": 18,
+      "depth": 11667,
+      "cx": 6638,
+      "u3": 7569,
+      "gates": 14207
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_esop_opt/exorcism_recursive_s11.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "c8618f28339172a43ead371d300865df92c16bfb177cbe760962fb2f0449c3fd",
+    "metrics": {
+      "width": 18,
+      "depth": 11799,
+      "cx": 6695,
+      "u3": 7643,
+      "gates": 14338
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/synthesis/esop59_recursive.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "9292b0d828bb6a7f9a20e958efdfd70194dd19452c6b439c67fe8b19490b342e",
+    "metrics": {
+      "width": 18,
+      "depth": 15179,
+      "cx": 9054,
+      "u3": 11549,
+      "gates": 20603
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/classiq_rank_synth/artifacts/scratch.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "41226f49f29a7a2a53f0d197e267666a5b09b90c21dc92e95c7d2f283d111265",
+    "metrics": {
+      "width": 18,
+      "depth": 21459,
+      "cx": 13707,
+      "u3": 16259,
+      "gates": 29966
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/lut_pebble_search/network_k6_direct_default_rootphase.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "4aec1600123ea6a8fbb19de10c7586df7beb2b41c5130dabe98f6521ca6a8839",
+    "metrics": {
+      "width": 18,
+      "depth": 22077,
+      "cx": 13938,
+      "u3": 16575,
+      "gates": 30513
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/lut_pebble_search/network_k6_direct_default_output.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "b7a1d97ffea6cd603c022cc18a96c269e2586c65487046ad65f52d1c19ad022e",
+    "metrics": {
+      "width": 18,
+      "depth": 24329,
+      "cx": 12946,
+      "u3": 13788,
+      "gates": 26734
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tweedledum_xag/inplace_sparse/affine_direct_phase_seed137_o3.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "91e0e5b4a96eb8ae200d26a496b19233f9a7e2ecbfe0507efc3658c90adf28e1",
+    "metrics": {
+      "width": 18,
+      "depth": 29976,
+      "cx": 13366,
+      "u3": 24531,
+      "gates": 37897
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/tweedledum_xag/inplace_sparse/affine_direct_phase_seed137_o0.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "0a0c8ef0fa2292c2f74d78f19d7df6d6ef39e087d79c3964aa16357fcee5c0fd",
+    "metrics": {
+      "width": 18,
+      "depth": 34657,
+      "cx": 18964,
+      "u3": 21341,
+      "gates": 40305
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/alternative/bdd_dsop.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  },
+  {
+    "sha256": "e630eb5a4448cc82bcd20f42346153d2463c85d52a9d24da0da78b27116afcd5",
+    "metrics": {
+      "width": 18,
+      "depth": 145090,
+      "cx": 87172,
+      "u3": 87312,
+      "gates": 174484
+    },
+    "paths": [
+      "research/external_classiq_oracle_1609/source_snapshot/tracks/phase_esop_opt/exorcism_gray_s11.qasm"
+    ],
+    "metadata_files": [],
+    "has_passed_true": false,
+    "claims_4096": false,
+    "claims_exhaustive": false,
+    "claims_randomized": false,
+    "claims": []
+  }
+]

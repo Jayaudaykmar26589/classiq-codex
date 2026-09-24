@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "gates": 820,
+  "cx": 429,
+  "basis_inputs_checked": 4096,
+  "marked_pixels": 1097,
+  "common_global_phase": [0.85696546362226622, 0.51537383922612356],
+  "max_observed_error": 5.2113301125761919e-13,
+  "max_discarded_l2_bound": 2.6611319693396325e-12,
+  "max_error_plus_bound": 3.1822649805972516e-12,
+  "max_helper_leakage_probability": 3.8503144306268883e-26,
+  "max_norm_error": 5.773159728050814e-15,
+  "max_final_support": 10
+}

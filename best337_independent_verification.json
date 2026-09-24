@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "gates": 2277,
+  "cx": 1267,
+  "basis_inputs_checked": 4096,
+  "marked_pixels": 1097,
+  "common_global_phase": [
+    1,
+    -3.0960781908248457e-16
+  ],
+  "max_observed_error": 1.6653510197709974e-14,
+  "max_discarded_l2_bound": 1.2584316256890262e-14,
+  "max_error_plus_bound": 2.9237826454600235e-14,
+  "max_helper_leakage_probability": 0,
+  "max_norm_error": 3.3306690738754696e-14,
+  "max_final_support": 1,
+  "scope": "Independent sparse all-4096 clean-input verification of a numeric-expression-only copy; no score or circuit change.",
+  "source_equivalence": "Gate-for-gate numeric rendering of snapshot best.qasm via the strict parser."
+}
