@@ -20,18 +20,12 @@ for h in (0,1):
     for x in range(64):
         # column level = number of nonempty patterns containing x
         lam[x,h]=sum(1 for p in pats if sum(p)>0 and p[x])
-# check f == [lam(x,h) >= lev(y)] with chain ordered widest=1 -> x in pattern i iff lam >= ... 
+# check: f(x,y) == [lev(y') <= lam(x, y5')] with y' = swap(y), on the ORIGINAL coordinates
 bad=0
 for x in range(64):
     for y in range(64):
-        h=y>>5; v= int(lev[y]<=7 and lev[y]!=7 and lam[x,h] >= (len([1])*0) )
-# explicit: x in row pattern of level l  <=> lam(x,h) >= (#nonempty patterns) - l + 1
-for h in (0,1):
-    ys=[y for y in range(64) if (y>>5)==h]; K=max(lev[y] for y in ys if lev[y]!=7)
-    for x in range(64):
-        for y in ys:
-            pred = lev[y]!=7 and lam[x,h] >= K-lev[y]+1
-            bad += int(pred)!=Ms[x,y]
+        yp=swap(y)
+        bad += int(lev[yp] <= lam[x, yp>>5]) != int(M[x,y])
 print('Ferrers comparator mismatches:',bad)
 print('lambda(x,0) values',sorted(set(lam[:,0])),'lambda(x,1)',sorted(set(lam[:,1])))
 np.savez('ferrers.npz',lam=lam,lev=lev)
