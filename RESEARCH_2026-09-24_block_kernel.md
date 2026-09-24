@@ -147,3 +147,43 @@ count.
   with 2–3 scratch wires and 24–28 ops, it stays 16–23 bits off. Longer programs (44 ops)
   are running.
 - A Walsh-support and don't-care minimizer, and a 2D fold analyser.
+
+## 7. Third round: controlled architecture search (plateau protocol)
+
+This round follows a fixed protocol:
+
+- **Scoring.** Every candidate is scored by the notebook's `qasm_metrics` on native u3/cx QASM, plus an exact all-4096 verifier. The ranking key is S = 10^6·depth + CX.
+- **Plateau rule.** A family that gets three candidates without a depth improvement is closed. CX gains at equal depth do not reset the counter.
+- **Tabu list.** A tabu list records why each closed family failed.
+
+The tools are in `arch_search/`: `score.py` (scorer with longest-path report), `results.csv` (every candidate), `corner.py` and `rankbasis.py`.
+
+**Measured structure** (matches the independent analysis): 1097 pixels, 68 corners of the mixed difference Δxy f, 19 distinct x-thresholds and 20 y-thresholds, each threshold in at most 4 corners. GF(2) rank is 10 for both the corner matrix C and the logo.
+
+| id | Family | Valid | W | Depth | CX | Note |
+|---|---|---|---|---|---|---|
+| E00 | separable encoder + kernel (incumbent) | yes | 18 | **176** | 421 | critical path: q12–q14 (x-side helpers) carry 164 of 176 gates |
+| C1 | rank-10, interval basis, compute–CZ–uncompute per term | yes | 18 | 1094 | 1378 | each term 61–157 layers |
+| C2 | rank-10, lane over a GL(10,2)-searched basis | screened out | – | – | – | differences between lane states are as complex as the factors (proxy 49.9 vs 42.1) |
+| C3 | corner + comparator kernel (x_low thresholds in one phase kernel) | yes | 60 | 413 | 700 | exact, but only on 60 wires |
+| F1 | BQSKit 3-qubit partition + LEAP resynthesis of E00 | yes | 18 | 176 | 421 | identical circuit returned |
+
+**Why the corner/rank family plateaus (type D/C, ancilla-limited serialization).**
+
+- Rank 10 forces at least 10 separate x-flag/y-flag products.
+- Every factor, in any basis found (a GL(10,2) anneal over 30k moves), has algebraic degree 4–6. That means at least 3–5 ANDs at AND-depth 3.
+- Exact narrow-control XAGs (control support ≤ 2) give 21–34 layers per flag compute.
+- On 18 wires a degree-5/6 flag needs 4–5 live wires, so terms cannot overlap. Some need staging (compute, copy, uncompute), which is where 61–157 layers per term come from.
+- No basis change removes the ≥ 10 serial compute/uncompute steps.
+
+**Tabu (do not retry without new evidence):**
+
+- Generic Walsh synthesis (4095 of 4095 terms).
+- Raw ANF (886 monomials, degree 12).
+- Closed Walsh-update lanes (the 337 family).
+- Affine-product encoders for fixed 4-bit class codes (earlier sessions).
+- Rank-10 compute–CZ–uncompute (C1).
+- Rank-10 lanes (C2).
+- Flag-based comparator hybrids (C3, S3 on 49 wires).
+- XAGs with wide affine controls: 28–65 CNOTs per 5-AND flag, so control support is always capped at 2.
+- Exact SAT for in-place lanes beyond 3 gates.

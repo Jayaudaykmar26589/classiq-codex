@@ -1,0 +1,27 @@
+{
+ "best": {
+  "cid": "E00",
+  "depth": 176,
+  "cx": 421,
+  "sha": "d62591c0e8a38bd2"
+ },
+ "plateau": {
+  "E_separable": 1,
+  "C_corner_rank": 3
+ },
+ "tabu": [
+  "generic Walsh phase polynomial: support 4095/4095",
+  "raw ANF: 886 monomials, degree 12",
+  "closed Walsh-update lanes (337 family): >=2 dense 64-term edges per side, 38-layer serial chains",
+  "separable 4-bit class codes with affine-product encoders <=8 updates (prior sessions): UNSAT / 4 wrong bits",
+  "rank-10 compute-CZ-uncompute per term on 18 wires (C1): 1094; each term 61-157 layers, flags degree 4-6 need 4-5 live ancillas",
+  "rank-10 lane (C2): consecutive deltas as complex as factors (proxy 49.9 vs 42.1)",
+  "flag-based comparator hybrid (C3): 413 even on 60 wires; flags (5-6 ANDs, depth 3) dominate",
+  "wide affine XAG controls: 28-65 CNOTs per 5-AND flag -> always constrain control support <=2",
+  "exact in-place lane SAT beyond 3 gates: intractable (hours)",
+  "S3 single block kernel: 151 on 49 wires; liveness blocks 18-wire fit"
+ ],
+ "plateau_diagnosis": {
+  "C_corner_rank": "Type D/C: ancilla-limited serialization; per-term flags of degree 4-6 need 4-5 live wires; representation has >=10 serial compute/uncompute steps"
+ }
+}
