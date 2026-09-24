@@ -10,3 +10,6 @@ time,cid,arch,params,valid,width,depth,cx,S,qasm_sha,crit_len,crit_cx,crit_u3,cr
 2026-09-24T20:08:51,D3a,in-place y-lane for W (lanea),"6+2 wires, 18 ops",component,,,,,,,,,,"exact: W affine in lane wires, 10 ANDs, AND-level 4"
 2026-09-24T20:08:51,D3b,"in-place y-lane stage1 (A,B)","6+3/4 wires, 14-20 ops",0,,,,,,,,,,best 1 wrong bit over 20+ anneals
 2026-09-24T20:08:51,D3c,"in-place x-lane (XR,XE)","6+1/2 wires, 14-22 ops",0,,,,,,,,,,best 2 wrong bits
+2026-09-24T20:52:34,F2,bqskit_4q_resynth(E00),QuickPartitioner(4)+LEAP thr 1e-11,1,18,176,421,176000421,,,,,,identical circuit (plateau type A); 1569 s
+2026-09-24T20:52:34,D4,"joint (x_hi,y) in-place lane for block-kernel features","9 data + 5 anc wires, 40-62 ops, SA 512 patterns",0,,,,,,,,,,best 50 wrong bits of ~1300 cared; not exact
+2026-09-24T20:52:34,D5,"separable 4-bit class codes, in-place encoders","6+3 wires, 28 ops",0,,,,,,,,,,kernel only 32 terms (LP); encoders 14-16 wrong bits

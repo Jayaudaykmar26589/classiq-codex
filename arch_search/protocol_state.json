@@ -6,7 +6,7 @@
   "sha": "d62591c0e8a38bd2"
  },
  "plateau": {
-  "E_separable": 1,
+  "E_separable": 2,
   "C_corner_rank": 3
  },
  "tabu": [

@@ -196,3 +196,10 @@ The tools are in `arch_search/`: `score.py` (scorer with longest-path report), `
   - So this family cannot reach 110–115, and 18 wires only adds pebbling overhead.
 - In-place lanes: the annealer found an exact 6+2-wire lane that makes the disc code W affine (10 ANDs, level 4). The lanes for A,B (best 1 wrong bit) and for X_R,X_E (best 2 wrong bits) did not close.
 - BQSKit 3-qubit resynthesis of E00 returned the identical circuit.
+
+**Later attempts (same round).**
+
+- **F2 (BQSKit, 4-qubit blocks).** Returned the identical 176/421 circuit. Block resynthesis of E00 is exhausted.
+- **Separable 4-bit class codes.** The best code pair gives an 8-bit class kernel with only 32 phase terms (LP estimate; angles ±π/4, ±π/8). The in-place encoders, however, stay 14–16 bits wrong (6+3 wires, 28 ops). This reproduces the earlier sessions' encoder barrier.
+- **Joint (x_hi, y) in-place lane for the block-kernel features.** Target: G, κ, V, O over 512 patterns on 9+5 wires, which would make the whole logo a single x_low kernel at an estimated depth of about 115. Best result is 50 wrong bits of about 1300 cared bits at 62 ops; not exact. Tools: `jlane.c` and `jlane_run.py` (scratchpad).
+- **Notebook definition check.** The small disc (x−55)²+(y−41)² ≤ 42 spans [49,61] on rows 39–43. So the bar is only [26,49]×[39,43], and the right end of the bar belongs to the disc. A simplified hybrid-K3 formulation was verified exact.
