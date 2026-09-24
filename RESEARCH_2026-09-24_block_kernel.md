@@ -87,3 +87,63 @@ This matches the conclusion of the 2026-09-22 sessions about fold/comparator pla
 - Search lane programs that expose row functions one after another instead of all at once,
   with x-controlled Toffolis writing into the accumulators.
 - Use dirty-ancilla computing on the x_low wires, which stay idle until the kernel.
+
+## 5. Second round: the leaderboard, and what the leader's numbers imply
+
+**Leaderboard.** A public repo from another participant tracks the leaderboard in its notes
+([4oeuhtns/classiq-challenge-2026](https://github.com/4oeuhtns/classiq-challenge-2026),
+`findings-2026-09-15.md` and `findings-2026-09-17.md`):
+
+| When | Entry | Depth | CX | Width |
+|---|---|---|---|---|
+| before 2026-09-15 | best public score | 137 | 561 | 18 |
+| 2026-09-15 20:07 UTC | Boopathi R. | 129 | 614 | 18 |
+
+This repo's 176/421 is therefore far from the top. That repo's own best is about depth 998,
+so it offers no competitive technique. No public write-up of the leading method was found.
+
+**What 129 / 614 implies.**
+
+- 614 CX over 129 layers is 4.76 CX per layer, so nearly every wire works in nearly every
+  layer. The other team derives a load imbalance of at most 1.9x, against about 30x for an
+  AND tree built on a shared scratch pool.
+- The GF(2) rank of the logo is 10 (checked here too). 614 CX over 10 rank terms is about
+  61 CX per term. That matches roughly 5 relative-phase ANDs per flag, computed and
+  uncomputed, for both flags of each term.
+- At most about 0.86 relative-phase ANDs start per layer on 18 wires (3 wires each, about
+  7 layers on the target). About 200 AND evaluations therefore cannot fit into 129 layers
+  as pure Toffolis. Part of the CX budget must be dense parity-network (phase-polynomial)
+  work, or the ANDs must run in place on the coordinate registers.
+
+The most plausible reading is two in-place lanes, one on x and one on y, that expose rank
+flags one after another. CZs fire between exposed flag pairs, and everything is mirrored.
+The 176/421 circuit in this repo has the same lane shape. Its flag updates, however, are
+dense 64-term Walsh updates rather than cheap AND updates, which is where its depth goes.
+
+**Negative results measured this round.**
+
+| Test | Result |
+|---|---|
+| Walsh support of the logo over its 12 raw bits | 4095 of 4095 terms: a raw phase polynomial is hopeless. |
+| Walsh support of the row functions (A, D, Reg, T, bar, d1e) | Exact supports 39–63. |
+| Same, with don't-cares minimized (tau, Vd0–2) | 45–48. Walsh-flag updates cost about 2x support. |
+| Walsh support of the S3 features over the 9 block bits | G: 194. V bits: 167–511 before don't-care optimization. |
+| Disc 1 in 2D-folded coordinates (x folded at 39.5, y folded at 19.5) | Dense (1023 of 1024). Threshold shapes are only sparse in the comparator form, where V is an explicit wire. |
+| Distinct 8x8 block shapes in the logo | 21 up to reflection. Two blocks (disc-1 centre) are not monotone under any fold. |
+| Re-optimizing the 176 circuit with a commutation-aware peephole scheduler | Still 176/421: there is no scheduling slack. |
+| Single exact 6-bit flags in place (lane annealer, affine exposure) | [2,26], [38,42], A and D all embed with 2 scratch wires at 5–6 ANDs, AND depth 3–4. With 1 scratch they mostly fail. |
+| Joint stages | tau+Vd gets within 1 bit (2–3 scratch). A+D+Reg stays about 9 bits off. |
+
+**Budget arithmetic for S3.** S3 needs about 31 ANDs, so 62 AND evaluations, plus a 45-term
+kernel. That is about 3x fewer ANDs than the inferred leader design, which gives it a
+theoretical floor of about 70–90 layers. The blocker remains liveness at 18 wires, not AND
+count.
+
+## 6. Tools written this round (session scratchpad; not committed)
+
+- `lanet`: a C annealer for in-place lane programs where each target only has to be exposed
+  (in the affine span of the lane wires) at some time step, not all at once. This is the
+  natural objective for streamed rank flags. On all 10 nested y-flags or all 10 x-flags,
+  with 2–3 scratch wires and 24–28 ops, it stays 16–23 bits off. Longer programs (44 ops)
+  are running.
+- A Walsh-support and don't-care minimizer, and a 2D fold analyser.
