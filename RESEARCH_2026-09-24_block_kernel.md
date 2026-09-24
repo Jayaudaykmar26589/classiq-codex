@@ -260,3 +260,27 @@ A clean AND needs 3 CX; a 2-CX circuit cannot give AND even up to phase. With a 
 **Block resynthesis fails.** The 3-qubit blocks around CX 592 (q17, q12, q8) and CX 732 (q12, q3, q15) were searched exhaustively over 3- and 4-slot templates with BQSKit instantiation. Each slot is a CX on one of 6 ordered pairs with a u3 on the idle qubit, or a full u3 layer, and boundary u3s are free. No exact equivalent exists. The original 5-slot structures are recovered to 2e-8, which validates the search.
 
 **Conclusion.** Without changing the architecture, E00 cannot reach 175 by rescheduling or by single-window resynthesis on up to 3 qubits. This agrees with the earlier session's "one conflict left at 175".
+
+## 10. Staircase-comparator reformulation (new exact identity; encoders not found)
+
+Tools are in `arch_search/round5/`; the rows are G4–G5.
+
+**Identity (verified exact, 0/4096; `ferrers.py`).**
+
+- Swap the empty rows 60–63 with rows 28–31 in place, using one gate: y5 ^= y4·y3·y2.
+- After the swap, the row patterns in each y-half are nested (a Ferrers diagram).
+- The whole logo is then a single comparison, f(x, y) = [ ℓ(y′) ≤ λ(x, y5′) ], where:
+  - ℓ is the row level: 1–5 or empty;
+  - λ is the column level: 0–5, and depends on the half.
+- This replaces the rank-10 sum with one comparator between two 3-bit level codes.
+
+**Measured costs.**
+
+- *Kernel* (`kern6v.py`): the best placement of levels in code space is numeric order, x codes [0,0,0,1,2,3,4,5] and y codes [1,2,3,4,5,5,∅,∅]. It gives a 6-bit phase polynomial with 40 rotations.
+- *Capacity:* the in-place fiber limits need 2 ancillas on the x side and 1 on the y side. That leaves 3 ancillas spare, so this reformulation is not wire-limited.
+- *Code-bit degree* (`lc2.py`): best found is 5–7 on the x side (7 input variables including the half bit) and 4–5 on the y side. The encoders therefore need AND-depth 3; the hoped-for depth 2 is ruled out.
+- *In-place encoders* (`lanelev.c`, a lane annealer whose cost is level consistency on designated code wires): at AND-depth 4 with 3 code ancillas per side, the best is 7 of 64 points wrong on the y side and 13 of 128 on the x side. Not exact.
+
+**Refined (non-class-constant) separable codes** (`refcode.py`, `joint.py`). Codes that may split a class across several values break the degree-19 barrier: 5-bit codes reach degree 4 on both axes. But the 10-bit kernel then becomes dense: 136 ANF terms in the best joint search, up to degree 10.
+
+**Status.** If exact encoders existed, the depth would project to about 100–140. Every family now fails on the same missing component: exact multi-output in-place encoders of degree ≥ 5 within the 18-wire budget.
