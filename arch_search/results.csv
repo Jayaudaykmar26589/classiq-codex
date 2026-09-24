@@ -13,3 +13,7 @@ time,cid,arch,params,valid,width,depth,cx,S,qasm_sha,crit_len,crit_cx,crit_u3,cr
 2026-09-24T20:52:34,F2,bqskit_4q_resynth(E00),QuickPartitioner(4)+LEAP thr 1e-11,1,18,176,421,176000421,,,,,,identical circuit (plateau type A); 1569 s
 2026-09-24T20:52:34,D4,"joint (x_hi,y) in-place lane for block-kernel features","9 data + 5 anc wires, 40-62 ops, SA 512 patterns",0,,,,,,,,,,best 50 wrong bits of ~1300 cared; not exact
 2026-09-24T20:52:34,D5,"separable 4-bit class codes, in-place encoders","6+3 wires, 28 ops",0,,,,,,,,,,kernel only 32 terms (LP); encoders 14-16 wrong bits
+2026-09-24T21:34:37,G1,"S2 paired-bilinear lanes (natural 6-term decomposition, 3-term blocks)","y-lane 5 mod + y5 read-only + 2-3 anc, 20-26 ops, maxlev 3-4",0,,,,,,,,,,"y blocks 7-11 wrong bits; one interval flag [29,53] alone needs AND-depth 5 with 2 anc (lanex exact final level)"
+2026-09-24T21:34:37,G2,"row/column permutation kernel (Walsh support)","SA over 64x64 permutations, L1 proxy",0,,,,,,,,,,"support stays 4095 for every permutation: 1097 odd => every Walsh coefficient = 2 mod 4"
+2026-09-24T21:34:37,G3,"hybrid feature + Walsh kernel","Walsh supports of paired flags",0,,,,,,,,,,"y flags 40-64 terms, x flags 32-128 terms each; about 450 parities for 6 terms"
+2026-09-24T21:34:37,L1,"exact commutation SAT schedule of E00","T=175, order encoding, CaDiCaL",0,18,,,,,175,,,,"relaxed bound 175; two forced wire conflicts (q14 fanout L81, q15 fanout L87) on the wire-10 u3/CX chain; fan-out rewrite (+2 CX) breaks the 175 window"

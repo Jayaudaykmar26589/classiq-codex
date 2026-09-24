@@ -7,7 +7,10 @@
  },
  "plateau": {
   "E_separable": 2,
-  "C_corner_rank": 3
+  "C_corner_rank": 3,
+  "G_paired_bilinear_S2": 1,
+  "G_permutation_kernel": 1,
+  "L_local_schedule": 1
  },
  "tabu": [
   "generic Walsh phase polynomial: support 4095/4095",
@@ -19,9 +22,16 @@
   "flag-based comparator hybrid (C3): 413 even on 60 wires; flags (5-6 ANDs, depth 3) dominate",
   "wide affine XAG controls: 28-65 CNOTs per 5-AND flag -> always constrain control support <=2",
   "exact in-place lane SAT beyond 3 gates: intractable (hours)",
-  "S3 single block kernel: 151 on 49 wires; liveness blocks 18-wire fit"
+  "S3 single block kernel: 151 on 49 wires; liveness blocks 18-wire fit",
+  "permutation-only kernels: Walsh support 4095 for every row/column permutation (odd weight); kernels need ancilla-extended features",
+  "Walsh-hybrid kernels on paired flags: 32-128 terms per flag, ~450 parities for 6 terms",
+  "S2 3-term block lanes with y5 read-only: single interval flag needs AND-depth 5 at 2 ancillas; blocks 7-11 bits off at depth 3-4",
+  "single-block S2 (all 6 flags live): liveness needs y-lane 10 + x-lane 11 modifiable wires (> 18)",
+  "E00 exact commutation rescheduling to 175: 2 forced fanout conflicts on the wire-10 chain; fan-out rewrite breaks the window"
  ],
  "plateau_diagnosis": {
-  "C_corner_rank": "Type D/C: ancilla-limited serialization; per-term flags of degree 4-6 need 4-5 live wires; representation has >=10 serial compute/uncompute steps"
+  "C_corner_rank": "Type D/C: ancilla-limited serialization; per-term flags of degree 4-6 need 4-5 live wires; representation has >=10 serial compute/uncompute steps",
+  "G_paired_bilinear_S2": "Type D: liveness. Injectivity needs flags + ceil(log2 max class) wires per lane; 3-term blocks sit at the 18-wire limit, so exact depth-3 lanes are not found",
+  "L_local_schedule": "Type A: 254 zero-slack gates at T=175; binding chain is the alternating u3/CX target chain on q10 (layers 74-88)"
  }
 }

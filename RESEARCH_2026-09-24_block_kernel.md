@@ -203,3 +203,36 @@ The tools are in `arch_search/`: `score.py` (scorer with longest-path report), `
 - **Separable 4-bit class codes.** The best code pair gives an 8-bit class kernel with only 32 phase terms (LP estimate; angles ±π/4, ±π/8). The in-place encoders, however, stay 14–16 bits wrong (6+3 wires, 28 ops). This reproduces the earlier sessions' encoder barrier.
 - **Joint (x_hi, y) in-place lane for the block-kernel features.** Target: G, κ, V, O over 512 patterns on 9+5 wires, which would make the whole logo a single x_low kernel at an estimated depth of about 115. Best result is 50 wrong bits of about 1300 cared bits at 62 ops; not exact. Tools: `jlane.c` and `jlane_run.py` (scratchpad).
 - **Notebook definition check.** The small disc (x−55)²+(y−41)² ≤ 42 spans [49,61] on rows 39–43. So the bar is only [26,49]×[39,43], and the right end of the bar belongs to the disc. A simplified hybrid-K3 formulation was verified exact.
+
+## 8. Fourth round: paired-bilinear lanes, permutation kernels, exact rescheduling
+
+No circuit below 176 was found this round. The deliverable is still `best_verified_depth176_cx421.{qasm,qmod}`. Tools are in `arch_search/round4/`, and the rows are G1–G3 and L1 in `arch_search/results.csv`.
+
+**Paired-bilinear decomposition (S2 family).**
+
+- `s2_natural_decomposition.py` gives an exact 6-term form, f = Σ X_j(x, y5)·Y_j(y) (0 mismatches). R1 is one term. The five C2 annuli are paired with the R2/C1 layers.
+- Half-space degrees (`halves.py`):
+  - Every nonzero x-function in the lower column space has degree 5–6.
+  - The upper x-space is mostly degree 5–6.
+  - So every x-lane needs AND-depth ≥ 3.
+- **Liveness bound.** A lane must stay injective. It therefore needs (number of live flags) + ⌈log2(largest class of equal flag values)⌉ modifiable wires.
+  - With all 6 flags live, that is 6+4 = 10 wires on the y side and 6+5 = 11 on the x side, which is more than 18. A single block is impossible.
+  - 3-term blocks sit exactly at the 18-wire limit.
+- **Lane search.** `lanex.c` is new: annealed prefix plus an exact final AND level, found by quotient-space linear algebra.
+  - With y5 read-only, the single flag [29,53] needs AND-depth 5 at 2 ancillas. It was not found at depth 3–4 with 3 ancillas.
+  - 3-flag y blocks stay 7–11 bits wrong at depth 3–4.
+  - This agrees with the earlier sessions' S2 negatives.
+
+**Permutation-only kernels are impossible.** Take any bijective re-encoding of x and y with no ancilla. The logo weight 1097 is odd, so every Walsh coefficient is ≡ 2 (mod 4) and the phase polynomial always needs 4095 parities. An SA over 64×64 permutations confirmed this. Any kernel must use ancilla-extended features.
+
+**Walsh hybrids are dense.** Each paired flag has a Walsh support of 32–128. Keeping one side as features and expanding the other side in parities costs about 450 parity rotations for the six terms.
+
+**Exact rescheduling of E00 (`satsched.py`, `conflicts.py`).**
+
+- The commutation-relaxed critical path is exactly 175.
+- At T=175 the window analysis pins two commuting CX pairs to the same wire and layer:
+  - the q14 fan-out to q10/q16 at layer 81;
+  - the q15 fan-out to q10/q16 at layer 87.
+- Both sit on the q10 chain, which alternates u3 and CX from layer 74 to 88 with zero slack.
+- The fan-out rewrite CX(h→o)·CX(c→h)·CX(h→o) costs +2 CX and makes the 175 window infeasible, because the hub wires are tight too.
+- 254 gates have zero slack at T=175. Depth 174 is excluded by dependencies alone.
