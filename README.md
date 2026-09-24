@@ -1,6 +1,17 @@
 # Current verified oracle
 
-The current local best is **depth177, CX426, width18**, with390U3 gates.
+The current local best is **depth 176, CX 421, width 18**, with 400 U3 gates.
+
+- `best_verified_depth176_cx421.qasm`: standalone native U3/CX oracle, without preparation or measurement.
+- `best_verified_depth176_cx421.qmod`: matching 821-operation oracle body and a native QMOD main wrapper.
+- `best_verified_depth176_cx421_verification.json`: exhaustive 4096-input phase, coordinate-restoration and clean-helper check.
+- `best_verified_depth176_cx421_qmod_correspondence.json`: numeric gate-body comparison.
+
+Re-checked on 2026-09-24 with an independent sparse all-4096 verifier: grader metrics (18, 176, 421), max phase error 6.6e-13, max helper leakage 3.0e-23. The QMOD oracle body matches the QASM gate for gate (821/821). Research from that session is in `RESEARCH_2026-09-24_block_kernel.md`.
+
+## Previous best (177/426)
+
+The previous best was **depth177, CX426, width18**, with390U3 gates.
 
 - `best_verified_depth177_cx426.qasm`: standalone native U3/CX oracle, without preparation or measurement.
 - `best_verified_depth177_cx426.qmod`: matching816-operation oracle body and a native QMOD main wrapper.
