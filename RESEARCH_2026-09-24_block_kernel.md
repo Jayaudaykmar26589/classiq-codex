@@ -236,3 +236,27 @@ No circuit below 176 was found this round. The deliverable is still `best_verifi
 - Both sit on the q10 chain, which alternates u3 and CX from layer 74 to 88 with zero slack.
 - The fan-out rewrite CX(h→o)·CX(c→h)·CX(h→o) costs +2 CX and makes the 175 window infeasible, because the hub wires are tight too.
 - 254 gates have zero slack at T=175. Depth 174 is excluded by dependencies alone.
+
+## 9. Depth 175 by local changes to E00: closed, with an exact explanation
+
+Tools (all in `arch_search/round4/`): `scan.py`, `whatif.py`, `paths.py`, `downset.py`, `refit.py`, `classmap.py`, `bq3.py`, and `finalize.py` (SAT reschedule, QASM/QMOD export, all-4096 verification). Results are rows L2–L5.
+
+**Unlock scan.** At T=175, 254 gates have zero slack. Each was removed in turn and the exact schedule re-solved. Only these removals make 175 feasible:
+
+- any gate of the spine prefix, gates 49–122 (layers 2–27, running q17 → q13 → q12 → q14 → q1 → q14);
+- CX 592 (layer 124);
+- CX 732 (layer 156).
+
+**The prefix is already minimal.** The down-set window D(73) maps every classical input to a single basis state. With a = x4⊕y5 and b = x1⊕x2 it computes:
+
+- q17 = b·¬a
+- q13 = q17·x5
+- a linear phase (−1)^(a⊕x5)
+
+A clean AND needs 3 CX; a 2-CX circuit cannot give AND even up to phase. With a ready only at layer 2 (after CX(11→4)), q17 cannot finish before layer 7, and no 6-layer q17 sequence reproduces the states (residual 2−√2).
+
+**Window re-fits fail.** Delete one spine u3 inside D(105) (11 wires, 128 inputs), then re-fit all 25 remaining u3s with analytic gradients so the window's outputs match exactly up to a global phase. The best losses are 0.050–0.146 and do not change across restarts, so this is a real obstruction rather than a bad local minimum.
+
+**Block resynthesis fails.** The 3-qubit blocks around CX 592 (q17, q12, q8) and CX 732 (q12, q3, q15) were searched exhaustively over 3- and 4-slot templates with BQSKit instantiation. Each slot is a CX on one of 6 ordered pairs with a u3 on the idle qubit, or a full u3 layer, and boundary u3s are free. No exact equivalent exists. The original 5-slot structures are recovered to 2e-8, which validates the search.
+
+**Conclusion.** Without changing the architecture, E00 cannot reach 175 by rescheduling or by single-window resynthesis on up to 3 qubits. This agrees with the earlier session's "one conflict left at 175".
