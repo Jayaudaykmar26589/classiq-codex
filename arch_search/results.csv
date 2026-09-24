@@ -6,3 +6,7 @@ time,cid,arch,params,valid,width,depth,cx,S,qasm_sha,crit_len,crit_cx,crit_u3,cr
 2026-09-24T19:38:16,C2,rank10_lane_basis,proxy only (not built),,,,,,,,,,,lane step-cost proxy 49.9 > direct 42.1; deltas as complex as factors; rejected by screening
 2026-09-24T19:40:07,C3,corner_rank_comparator_kernel(hybrid-K2),"wide 60-wire bound, narrow R-block flags",1(width60),60,413,700,,,,,,,exact (err 9e-15) but width 60; 18-wire fit only adds pebbling/recompute -> rejected
 2026-09-24T19:42:28,F1,bqskit_3q_resynth(E00),QuickPartitioner(3)+LEAP+ScanningGateRemoval thr 1e-11,1,18,176,421,176000421,d62591c0e8a38bd2,176,96,80,,identical circuit returned (plateau type A)
+2026-09-24T20:08:51,C3b,"corner+comparator kernel (hybrid-K2), all flags narrow",width 60 bound,1(width60),60,313,634,,,,,,,"flag compute 27-38 layers each (5-7 ANDs, AND-depth 3); Y5->m->G chain is 5 AND levels"
+2026-09-24T20:08:51,D3a,in-place y-lane for W (lanea),"6+2 wires, 18 ops",component,,,,,,,,,,"exact: W affine in lane wires, 10 ANDs, AND-level 4"
+2026-09-24T20:08:51,D3b,"in-place y-lane stage1 (A,B)","6+3/4 wires, 14-20 ops",0,,,,,,,,,,best 1 wrong bit over 20+ anneals
+2026-09-24T20:08:51,D3c,"in-place x-lane (XR,XE)","6+1/2 wires, 14-22 ops",0,,,,,,,,,,best 2 wrong bits

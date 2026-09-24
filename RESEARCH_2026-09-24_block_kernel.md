@@ -187,3 +187,12 @@ The tools are in `arch_search/`: `score.py` (scorer with longest-path report), `
 - Flag-based comparator hybrids (C3, S3 on 49 wires).
 - XAGs with wide affine controls: 28–65 CNOTs per 5-AND flag, so control support is always capped at 2.
 - Exact SAT for in-place lanes beyond 3 gates.
+
+**Batch D/F follow-up (same round).**
+
+- Hybrid-K2 with every flag narrow (control support ≤ 2) is still depth 313 on 60 wires.
+  - Each degree-5/6 flag costs 27–38 layers to compute: 3 AND levels at about 7 layers each (relative-phase Toffoli), plus control-forming and gather CNOTs. Every compute/uncompute pair therefore costs about 60 layers.
+  - The kernel features chain Y5 → m → G is 5 AND levels deep.
+  - So this family cannot reach 110–115, and 18 wires only adds pebbling overhead.
+- In-place lanes: the annealer found an exact 6+2-wire lane that makes the disc code W affine (10 ANDs, level 4). The lanes for A,B (best 1 wrong bit) and for X_R,X_E (best 2 wrong bits) did not close.
+- BQSKit 3-qubit resynthesis of E00 returned the identical circuit.
