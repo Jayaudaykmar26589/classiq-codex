@@ -5,8 +5,8 @@ Follows the baseline notebook's steps exactly:
   synthesize (depth, max_width 18) -> export QASM2 -> drop the two harness hadamard_transform calls
   -> transpile (AUTO_OPTIMIZE, basis u3/cx) -> metrics -> export QASM2 -> exact 4096-input check.
 
-Usage:  python synth_sweep.py [model ...] [--seeds N] [--timeout S] [--transpile auto|intensive|custom]
-Results go to sweep_results/<model>_seed<k>.qasm plus sweep_results/summary.json.
+Usage:  python synth_sweep.py [model ...] [--seeds N] [--timeout S] [--transpile auto|intensive|custom] [--out DIR]
+Results go to <out>/<model>_seed<k>.qasm plus <out>/summary.json (default out: sweep_results/).
 """
 import argparse, json, re, sys
 from pathlib import Path
@@ -53,8 +53,9 @@ if __name__ == '__main__':
     ap.add_argument('--seeds', type=int, default=8)
     ap.add_argument('--timeout', type=int, default=600)
     ap.add_argument('--transpile', default='auto', choices=list(TRANSPILE))
+    ap.add_argument('--out', default=str(HERE / 'sweep_results'))
     a = ap.parse_args()
-    out = HERE / 'sweep_results'; out.mkdir(exist_ok=True)
+    out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
     summary = []
     for m in a.models:
         for seed in range(1, a.seeds + 1):
