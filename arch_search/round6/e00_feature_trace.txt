@@ -1,0 +1,121 @@
+   0 q3  aff:x1+x3
+   1 q2  aff:x1+x2
+   4 q8  aff:y2
+   5 q9  aff:y3+y4
+   6 q8  aff:y2+y4
+   8 q4  aff:x4+y5
+   9 q9  aff:y3+y4+y5
+  10 q0  aff:x0+y5
+  13 q1  aff:x1+y5
+  24 q14 deg2:x1 ^ x0*x1 ^ x0*y5 ^ x1*y5
+  35 q10 deg2:y3 ^ y5 ^ y3*y5 ^ y4*y5
+  36 q11 aff:y5
+  60 q15 deg3:y0*y1*y3 ^ y0*y1*y4 ^ y0*y1*y5
+  61 q8  deg3:y2 ^ y0*y1*y3 ^ y4 ^ y0*y1*y4 ^ y0*y1*y5
+  66 q16 deg4/11mon
+  69 q17 deg2:x1 ^ x2 ^ x1*x4 ^ x2*x4 ^ x1*y5 ^ x2*y5
+  73 q13 deg3:x1*x5 ^ x2*x5 ^ x1*x4*x5 ^ x2*x4*x5 ^ x1*x5*y5 ^ x2*x5*y5
+  81 q14 deg2:x0*x1 ^ y5 ^ x0*y5 ^ x1*y5
+  83 q12 deg5/16mon
+  84 q4  deg5/18mon
+ 105 q14 deg5/16mon
+ 114 q9  deg4/14mon
+ 141 q9  aff:y3+y4+y5
+ 155 q4  aff:x4+y5
+ 160 q3  aff:1+x1+x3
+ 165 q0  aff:1+x0+y5
+ 166 q14 deg2:1 ^ x0*x1 ^ y5 ^ x0*y5 ^ x1*y5
+ 167 q14 deg2:1 ^ x1 ^ x0*x1 ^ x0*y5 ^ x1*y5
+ 181 q0  aff:x0+y5
+ 193 q8  aff:y2+y4
+ 207 q2  aff:1+x1+x2
+ 208 q3  aff:x2+x3
+ 223 q10 aff:y4
+ 229 q9  aff:y3+y5
+ 230 q9  aff:y3
+ 238 q8  aff:y2
+ 239 q10 aff:y2+y4
+ 250 q16 deg3:1 ^ y2*y3 ^ y3*y4 ^ y2*y3*y5 ^ y3*y4*y5
+ 269 q2  aff:1+x2+y5
+ 274 q14 deg2:x2 ^ x1*x2 ^ x1*x4 ^ y5 ^ x2*y5 ^ x4*y5
+ 282 q12 deg5/32mon
+ 293 q4  deg5/34mon
+ 294 q12 deg5/34mon
+ 302 q12 deg5/32mon
+ 307 q13 deg6/62mon
+ 311 q14 deg5/24mon
+ 312 q14 deg5/32mon
+ 319 q10 deg2:y2*y3 ^ y4
+ 335 q16 deg3:1 ^ y0 ^ y2*y3 ^ y3*y4 ^ y2*y3*y5 ^ y3*y4*y5
+ 340 q16 deg3:1 ^ y2*y3 ^ y3*y4 ^ y2*y3*y5 ^ y3*y4*y5
+ 352 q1  deg3/10mon
+ 356 q17 deg5/13mon
+ 360 q15 deg6/17mon
+ 364 q10 deg5/17mon
+ 365 q10 deg5/47mon
+ 366 q14 deg5/40mon
+ 367 q10 deg5/48mon
+ 368 q10 deg5/56mon
+ 371 q14 deg5/32mon
+ 372 q10 deg5/26mon
+ 373 q10 deg5/25mon
+ 374 q10 deg5/17mon
+ 387 q1  aff:x1+y5
+ 396 q17 deg5/12mon
+ 399 q17 deg6/9mon
+ 416 q14 deg5/24mon
+ 429 q4  aff:x4+y5
+ 430 q4  aff:x1+x4
+ 435 q13 deg3/11mon
+ 439 q4  aff:x4+y5
+ 440 q13 deg3/9mon
+ 460 q2  aff:x2+y5
+ 462 q4  aff:x1+x4
+ 463 q4  aff:x1+x4+x5
+ 467 q2  aff:x1+x2
+ 475 q3  aff:x1+x3
+ 481 q17 deg5/12mon
+ 486 q10 deg2:y2*y3 ^ y4
+ 500 q17 deg5/13mon
+ 501 q6  deg3:1 ^ y0 ^ y2*y3 ^ y3*y4 ^ y2*y3*y5 ^ y3*y4*y5
+ 523 q6  aff:y0
+ 540 q1  aff:x1
+ 541 q1  aff:x1+x5
+ 543 q1  aff:1+x1+x5
+ 544 q4  aff:x1+x4
+ 548 q4  aff:1+x1+x4
+ 549 q13 deg2/7mon
+ 570 q10 aff:y4
+ 578 q7  aff:y1
+ 585 q0  aff:x0
+ 622 q1  aff:x1
+ 623 q5  aff:x5
+ 626 q4  aff:x1+x4
+ 636 q3  aff:x3+x4
+ 637 q4  aff:x2+x4
+ 638 q2  aff:x2
+ 651 q13 deg2:1 ^ x3 ^ x4 ^ x5 ^ x3*x5 ^ x4*x5
+ 667 q14 deg4/12mon
+ 671 q12 deg6/21mon
+ 672 q5  deg4/13mon
+ 675 q10 aff:y4+y5
+ 694 q15 deg2:1 ^ y2*y4 ^ y2*y5
+ 700 q11 aff:y3+y5
+ 701 q7  aff:y1+y3
+ 708 q8  deg2:1 ^ y2 ^ y4 ^ y0*y4 ^ y5 ^ y0*y5
+ 710 q11 deg2:1 ^ y3 ^ y2*y4 ^ y5 ^ y2*y5
+ 715 q9  deg2/7mon
+ 736 q5  aff:x5
+ 756 q12 aff:
+ 767 q13 aff:
+ 770 q4  aff:x4
+ 771 q3  aff:x3
+ 774 q14 aff:
+ 780 q9  aff:y3
+ 787 q8  aff:y2
+ 796 q11 aff:y3+y5
+ 804 q7  aff:y1
+ 814 q15 aff:
+ 817 q11 aff:y5
+ 818 q10 aff:y4
+ 820 q17 aff:
