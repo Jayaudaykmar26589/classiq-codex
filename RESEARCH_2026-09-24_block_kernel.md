@@ -378,3 +378,24 @@ Network access to `platform.classiq.io` and `auth.classiq.io` was enabled, and t
 - Classiq's automatic synthesis of high-level Qmod (lookup tables, comparisons, rectangle predicates) is 30× deeper than the hand-built circuit. Leaderboard entries at depth 115–125 must therefore be hand-built at gate level, as ours is.
 - The Classiq transpiler finds nothing to remove from the incumbent.
 - Access to Classiq does not unlock a new architecture. It is useful only as an independent check of submissions.
+
+## 13. Sixth round: exact encoder SAT, AND-count bounds, Classiq lookup tables
+
+Tools are in `arch_search/round6/`; the rows are G16–G20. Scripts that read `ferrers.npz` expect the file written by `round5/ferrers.py` in the working directory. No circuit below 176 was found.
+
+**Measured this round:**
+
+- *Classiq lookup table* (`lut_probe.py`): a single 6-bit → 3-bit table (the y-side level code), computed and uncomputed, synthesizes to depth 1249 / 756 CX. Classiq cannot supply the encoders.
+- *Kernel with the half bit moved out of the x code* (`k11.py`): the x-side then has 11 column classes (4-bit code), and the best kernel over (x code, y code, half bit) has 125 phase terms, against 40 for the half-dependent 3+3 code. Dropped.
+- *Code maps up to affine equivalence* (`maps.py`): there are 9 classes of y maps and 5 of x maps. The best pairs give kernels of 40–46 terms, so the choice of map costs little.
+- *CEGAR exact SAT for in-place encoders* (`sat2.py`): the code bits may be any affine function of the final wires, and commuting neighbours are symmetry-broken. Every call beyond trivial sizes hit its conflict budget. The disc-2-only half is UNSAT up to 5 gates.
+- *Near-miss analysis* (`extra.py`): the 96 saved 3-bit y near-misses always merge the level-4 rows (12, 26, 35, 47). None becomes exact with one or two extra kernel wires, and no set of 4 final wires is consistent.
+- *Exact multiplicative complexity* (`xag_sat.py`, XAG with affine inputs and outputs):
+
+  | Code | Lower bound |
+  |---|---|
+  | y-side 3-bit level code | at least 5 ANDs (4 is UNSAT) |
+  | disc-2 half of the x code | at least 5 ANDs (4 is UNSAT) |
+  | full x code (7 inputs) | open; the search is at 6 ANDs |
+
+  These bounds are small. The obstacle is therefore liveness, not AND count: on 18 wires the six code bits leave no clean scratch for out-of-place computation, so at least one encoder must run in place. The in-place search is the part that fails.
