@@ -284,3 +284,17 @@ Tools are in `arch_search/round5/`; the rows are G4–G5.
 **Refined (non-class-constant) separable codes** (`refcode.py`, `joint.py`). Codes that may split a class across several values break the degree-19 barrier: 5-bit codes reach degree 4 on both axes. But the 10-bit kernel then becomes dense: 136 ANF terms in the best joint search, up to degree 10.
 
 **Status.** If exact encoders existed, the depth would project to about 100–140. Every family now fails on the same missing component: exact multi-output in-place encoders of degree ≥ 5 within the 18-wire budget.
+
+**Round 5b: encoder synthesis for the staircase comparator (row G6).**
+
+- *Assembler* (`assemble_sc.py`): chains the swap, the two encoders (relative-phase Toffolis, exactly mirrored) and the exact 6-bit phase-polynomial kernel. Its parts were unit-tested as follows:
+  - kernel phases on single-point test functions;
+  - relative-phase Toffoli and swap permutations;
+  - diagonality of the mirrored block.
+- *Deeper lanes* (AND-depth 5–6, 36–44 ops): still 7–8 of 64 points wrong on y and 9–11 of 128 on x.
+- *Free code wires plus pair-collision cost* (`lanelev2.c`): 18–23 colliding pairs on y and about 107 on x. No improvement.
+- *Exact SAT* (`sat_enc.py`, level consistency as pairwise code inequality):
+  - Proving 5 gates insufficient took 573 s (UNSAT).
+  - Real encoders need 10 or more gates, which is intractable at this rate.
+  - This agrees with the earlier sessions' finding that exact in-place lane SAT is intractable.
+- *Status:* the staircase comparator stays unbuilt. Its encoders are the bottleneck, exactly as in every other family.
