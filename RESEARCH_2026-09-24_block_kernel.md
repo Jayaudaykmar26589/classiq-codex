@@ -361,3 +361,20 @@ Tools are in `arch_search/round5/`; the rows are G4–G5.
 - `xor_rectangles`: 17 XOR-overlapping rectangles, against the baseline's 18 disjoint ones.
 
 `synth_sweep.py` runs the notebook's pipeline over random seeds. It has not been synthesized, because Classiq hosts are blocked here.
+
+## 12. Classiq cloud access (2026-09-25)
+
+Network access to `platform.classiq.io` and `auth.classiq.io` was enabled, and the SDK logged in through the device-code flow. The SDK installed here (1.29.1) is the latest release on PyPI. The notebook pipeline (`classiq_models/synth_sweep.py`) now runs end to end against the real service. Rows G14 and G15 hold the results.
+
+| Experiment | Result |
+|---|---|
+| `xor_rectangles` model, seed 1 | synthesized at width 18, **depth 5335, 3436 CX**, exact on all 4096 inputs |
+| `staircase_two_lut` model | rejected: needs 20 qubits |
+| `staircase_or_lut` model | rejected: needs 27 qubits |
+| Incumbent 176/421 re-transpiled by Classiq (AUTO_OPTIMIZE, LIGHT, MEDIUM, INTENSIVE) | 176/421 at every level, still exact |
+
+**Conclusions:**
+
+- Classiq's automatic synthesis of high-level Qmod (lookup tables, comparisons, rectangle predicates) is 30× deeper than the hand-built circuit. Leaderboard entries at depth 115–125 must therefore be hand-built at gate level, as ours is.
+- The Classiq transpiler finds nothing to remove from the incumbent.
+- Access to Classiq does not unlock a new architecture. It is useful only as an independent check of submissions.
