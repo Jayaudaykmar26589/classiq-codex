@@ -298,3 +298,11 @@ Tools are in `arch_search/round5/`; the rows are G4–G5.
   - Real encoders need 10 or more gates, which is intractable at this rate.
   - This agrees with the earlier sessions' finding that exact in-place lane SAT is intractable.
 - *Status:* the staircase comparator stays unbuilt. Its encoders are the bottleneck, exactly as in every other family.
+
+**Round 5c: out-of-place feature chains (row G8, `featchain.py`).**
+
+- *Setup:* the encoder computes AND features into ancillas and leaves the inputs untouched, so reversibility is automatic.
+- *Acceptance test:* exact linear algebra. There must be a subspace of the feature space, of codimension 3, that avoids every difference vector between inputs of different levels.
+- *Result:* the searches stalled at dimension 3 of 6 (y, 3 ANDs), 4 of 7 (y, 4 ANDs) and 3 of 7 (x).
+- *Why:* multiplicative complexity is at least degree − 1, so k kept ANDs give degree at most k + 1. The level codes need degree 5 (y) and 7 (x), which means at least 4 + 6 = 10 live AND results. Only 6 ancillas exist.
+- *Consequence:* the staircase comparator on 18 wires needs genuinely in-place encoders (or Bennett staging, which adds depth), and those encoders have not been found.
