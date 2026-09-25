@@ -306,3 +306,13 @@ Tools are in `arch_search/round5/`; the rows are G4–G5.
 - *Result:* the searches stalled at dimension 3 of 6 (y, 3 ANDs), 4 of 7 (y, 4 ANDs) and 3 of 7 (x).
 - *Why:* multiplicative complexity is at least degree − 1, so k kept ANDs give degree at most k + 1. The level codes need degree 5 (y) and 7 (x), which means at least 4 + 6 = 10 live AND results. Only 6 ancillas exist.
 - *Consequence:* the staircase comparator on 18 wires needs genuinely in-place encoders (or Bennett staging, which adds depth), and those encoders have not been found.
+
+**Round 5d: more literature and one untried tool.**
+
+- *Literature (web search).* I looked for work on the recurring blocker, exact in-place multi-output synthesis:
+  - exact Toffoli-network synthesis and model-checking synthesis: practical only for about 4–5 lines;
+  - ancilla-free synthesis via sorting;
+  - reversible pebbling (Meuli et al.; caterpillar) and Reqomp: these trade ancillas for recomputation depth;
+  - a September 2026 phase-based comparator (arXiv 2609.25262): its readout is a biased coin that needs repeated shots, so it is probabilistic and not an exact oracle.
+  - None of these gives exact in-place encoders at 8–11 lines.
+- *ZX rewriting of E00 (pyzx, row L6):* full_reduce gives depth 731–756; teleport_reduce gives 246–253. Both are worse than 176.
