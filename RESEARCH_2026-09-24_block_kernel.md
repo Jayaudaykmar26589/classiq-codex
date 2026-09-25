@@ -335,3 +335,29 @@ Tools are in `arch_search/round5/`; the rows are G4–G5.
 - *Leaderboard decoding* (2026-09-25 snapshot):
   - Rank 4 (124 depth / 319 CX, 2.6 CX per layer) has our density with 100 fewer CX and 52 fewer layers. That indicates lean encoders with a tiny kernel, like the 3+3-bit staircase whose encoders we have not found.
   - Ranks 1, 3 and 5 (115–125 depth / 563–575 CX, about 5 CX per layer) match the wide-code profile: cheap encoders plus a large parallel kernel. Our 5+3-bit estimate is about 550–650 CX.
+
+## 11. Classiq documentation research and Qmod models (2026-09-25)
+
+**Access.** docs.classiq.io and every Classiq API/auth host return 403 from this environment's egress policy. The research therefore used the public Classiq library (a shallow clone), the Classiq SDK 1.29.1 wheel from PyPI and the challenge's baseline notebook.
+
+**Findings.**
+
+- The `phase` statement is a direct phase polynomial (a CX parity network with Z rotations, no ancilla). Logical operators are not allowed in its expression.
+- `control(pred, phase(pi))` compiles to X-flips plus a multi-controlled Z on the register, or computes the predicate into a temporary register and then applies a multi-controlled Z.
+- `within_apply` is U† V U. A `qperm` block may use relative-phase Toffolis.
+- The only synthesis constraints are `max_width` and `optimization_parameter` (depth, width, cx or no_opt). `transpilation_option` is one of none, decompose, auto optimize, light, medium, intensive or custom. `random_seed` drives a MiniZinc solver; `optimization_level` is inert.
+- Built-ins: `mcx_hybrid_claudon_etal`, and `less_than_constant_{khattar_gidney,hybrid,qft}`.
+- The baseline notebook verifies on random full-support states. The oracle must be exact.
+
+**Conditionally clean ancillae** (Khattar and Gidney, *Quantum* 2025).
+
+- *Idea:* qubits that already hold data can serve as clean workspace when conditioned on known controls.
+- *Result:* log-depth multi-controlled X with 2 clean ancillas.
+- *For our encoders:* borrowing the other register serializes the x and y sides, giving roughly 250 layers. Classiq's Khattar–Gidney 6-bit comparator was measured earlier at depth 75. Not a win for this problem.
+
+**Qmod models** (`classiq_models/`). Each is exact on all 4096 pixels:
+
+- `staircase_two_lut` and `staircase_or_lut`: the row swap folded into quantum-indexed lookup tables, then one level comparison per half;
+- `xor_rectangles`: 17 XOR-overlapping rectangles, against the baseline's 18 disjoint ones.
+
+`synth_sweep.py` runs the notebook's pipeline over random seeds. It has not been synthesized, because Classiq hosts are blocked here.
