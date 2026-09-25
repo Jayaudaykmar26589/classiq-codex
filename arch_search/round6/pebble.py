@@ -86,7 +86,9 @@ def from_xag(sol, nmod_extra, ro_inputs):
     A = [form(r) for r in sol['A']]; B = [form(r) for r in sol['B']]; outs = [form(r) for r in sol['O']]
     ro = [1 << (1 + j) for j in ro_inputs]
     V0 = tuple(canon([1 << (1 + j) for j in range(n)]))
-    return Game(n, k, A, B, outs, ro, n + nmod_extra), V0
+    game = Game(n, k, A, B, outs, ro, n + nmod_extra)
+    game.Aconst = [r[-1] for r in sol['A']]; game.Bconst = [r[-1] for r in sol['B']]
+    return game, V0
 
 if __name__ == '__main__':
     sol = json.load(open(sys.argv[1])); nanc = int(sys.argv[2]); maxd = int(sys.argv[3])
@@ -94,3 +96,21 @@ if __name__ == '__main__':
     game, V0 = from_xag(sol, nanc, ro)
     p = solve(game, V0, maxd, log=lambda s: print(s, flush=True))
     print('SCHEDULE', p)
+
+def bfs(game, V0, maxstates=5_000_000, log=print):
+    """exhaustive breadth-first search; returns shortest schedule or None (with state count)."""
+    from collections import deque
+    parent = {V0: None}; q = deque([V0])
+    while q:
+        V = q.popleft()
+        if game.goal(V):
+            path = []
+            while parent[V] is not None:
+                P, mv = parent[V]; path.append(mv); V = P
+            return path[::-1], len(parent)
+        for i, how, V2 in game.moves(V):
+            if V2 not in parent:
+                parent[V2] = (V, (i, how)); q.append(V2)
+                if len(parent) > maxstates: log('state cap hit'); return None, len(parent)
+        if len(parent) % 100000 < 50: pass
+    return None, len(parent)
