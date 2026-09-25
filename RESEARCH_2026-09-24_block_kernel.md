@@ -399,3 +399,23 @@ Tools are in `arch_search/round6/`; the rows are G16–G20. Scripts that read `f
   | full x code (7 inputs) | open; the search is at 6 ANDs |
 
   These bounds are small. The obstacle is therefore liveness, not AND count: on 18 wires the six code bits leave no clean scratch for out-of-place computation, so at least one encoder must run in place. The in-place search is the part that fails.
+
+## 14. Live Classiq documentation, first exact in-place encoder, kernel synthesis (2026-09-25)
+
+**Documentation.** docs.classiq.io became reachable with curl (WebFetch is still blocked). I read the pages linked from the baseline notebook, plus the `/llms.txt` index. Nothing contradicts or extends section 11:
+
+- `phase` compiles a polynomial expression into an Ising Hamiltonian (Z and ZZ… rotations), i.e. a parity network.
+- `qperm`, `Const` and `within_apply` give automatic uncomputation that allows relative phases.
+- Constraints are only `max_width` and `optimization_parameter`. Transpilation levels run from none through intensive and custom.
+- In the MCX tutorial, Classiq's own depth-optimised MCX reaches depth 81 at best.
+- "Quantum oracle sketching" is approximate (streamed samples), so it is not usable for an exact oracle.
+
+**First exact in-place encoder (row G21).** The disc-2 half of the x level code has a 6-AND XAG (4 ANDs is UNSAT; 5 is open).
+
+- The subspace pebbling game (`round6/pebble*.py`) proves that no in-place schedule of this blueprint exists with 1 or 2 ancillas: the reachable state spaces are 5,257 and 447,543 states.
+- With 3 ancillas, 8 Toffolis suffice.
+- Compiling it (`compile_peb.py`, `compile_beam.py`, `peb_multi.py`, sampling 298 shortest schedules) gives an exact encoder of depth 55 / 55 CX, including 31 frame CNOTs.
+
+**Kernel (row G22).** The 40-term staircase kernel is exact at 52 CX with Qiskit GraySynth, but depth 80. Qiskit's `synth_cnot_phase_aam` reduces numeric angles mod π, a bug worked around with index tags. A layered beam scheduler (`kernel_depth.py`) gives depth 36 / 53 CX.
+
+**Budget for the target of depth 120–125 and fewer than 300 CX.** Each encoder, one way, must be at most about 44 deep with at most about 58 CX. The half x-encoder alone is already 55 / 55. The full x code (both halves, half bit included) and the y code are still being searched (exact AND counts at 8+ ANDs).
