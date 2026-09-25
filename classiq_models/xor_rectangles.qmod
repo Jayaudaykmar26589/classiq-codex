@@ -1,0 +1,61 @@
+qperm xor_rectangles_oracle(const x: qnum<6>, const y: qnum<6>) {
+  control (((x >= 2) & (x <= 26)) & ((y >= 29) & (y <= 53))) {
+    phase (pi);
+  }
+  control (((x >= 27) & (x <= 49)) & ((y >= 39) & (y <= 43))) {
+    phase (pi);
+  }
+  control ((x == 32) & ((y >= 17) & (y <= 21))) {
+    phase (pi);
+  }
+  control ((x == 33) & ((y >= 15) & (y <= 23))) {
+    phase (pi);
+  }
+  control (((x >= 34) & (x <= 35)) & ((y >= 13) & (y <= 25))) {
+    phase (pi);
+  }
+  control (((x >= 36) & (x <= 37)) & ((y >= 12) & (y <= 26))) {
+    phase (pi);
+  }
+  control (((x >= 38) & (x <= 42)) & ((y >= 11) & (y <= 27))) {
+    phase (pi);
+  }
+  control (((x >= 43) & (x <= 44)) & ((y >= 12) & (y <= 26))) {
+    phase (pi);
+  }
+  control (((x >= 45) & (x <= 46)) & ((y >= 13) & (y <= 25))) {
+    phase (pi);
+  }
+  control ((x == 47) & ((y >= 15) & (y <= 23))) {
+    phase (pi);
+  }
+  control ((x == 48) & ((y >= 17) & (y <= 21))) {
+    phase (pi);
+  }
+  control ((x == 50) & ((y >= 37) & (y <= 45))) {
+    phase (pi);
+  }
+  control (((x >= 51) & (x <= 52)) & ((y >= 36) & (y <= 46))) {
+    phase (pi);
+  }
+  control (((x >= 53) & (x <= 57)) & ((y >= 35) & (y <= 47))) {
+    phase (pi);
+  }
+  control (((x >= 58) & (x <= 59)) & ((y >= 36) & (y <= 46))) {
+    phase (pi);
+  }
+  control ((x == 60) & ((y >= 37) & (y <= 45))) {
+    phase (pi);
+  }
+  control ((x == 61) & ((y >= 39) & (y <= 43))) {
+    phase (pi);
+  }
+}
+
+qfunc main(output x: qnum<6>, output y: qnum<6>) {
+  allocate(x);
+  allocate(y);
+  hadamard_transform(x);
+  hadamard_transform(y);
+  xor_rectangles_oracle(x, y);
+}
