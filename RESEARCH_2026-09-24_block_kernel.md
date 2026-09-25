@@ -316,3 +316,22 @@ Tools are in `arch_search/round5/`; the rows are G4–G5.
   - a September 2026 phase-based comparator (arXiv 2609.25262): its readout is a biased coin that needs repeated shots, so it is probabilistic and not an exact oracle.
   - None of these gives exact in-place encoders at 8–11 lines.
 - *ZX rewriting of E00 (pyzx, row L6):* full_reduce gives depth 731–756; teleport_reduce gives 246–253. Both are worse than 176.
+
+**Round 5e: wider codes, the first exact encoder, and the leaderboard profile (row G12).**
+
+- *Exact y-encoders* (saved in `round5/encoders/`), using 5-bit level codes:
+  - with 2 ancillas: 16 ANDs, AND-depth 4;
+  - with 3 ancillas: 12 ANDs plus 11 CX, AND-depth 4.
+  - Check: injective, and all 32 code values are level-consistent.
+- *Trade-off, as measured:*
+
+  | Code widths (y + x) | Kernel phase terms | Encoders |
+  |---|---|---|
+  | 3 + 3 bit | 40 | not found (y 5 wrong, x 9–13 wrong) |
+  | 5 + 3 bit | 211 (239 with an L1 LP over the full lane state) | y exact, x not found |
+  | 5 + 5 bit | 897 | y exact, x 3 wrong |
+
+  Wider codes make exact encoders findable, but the kernel grows quickly.
+- *Leaderboard decoding* (2026-09-25 snapshot):
+  - Rank 4 (124 depth / 319 CX, 2.6 CX per layer) has our density with 100 fewer CX and 52 fewer layers. That indicates lean encoders with a tiny kernel, like the 3+3-bit staircase whose encoders we have not found.
+  - Ranks 1, 3 and 5 (115–125 depth / 563–575 CX, about 5 CX per layer) match the wide-code profile: cheap encoders plus a large parallel kernel. Our 5+3-bit estimate is about 550–650 CX.
